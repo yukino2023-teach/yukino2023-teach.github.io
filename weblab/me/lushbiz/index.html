@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lushbiz</title>
+    <!-- slickのCSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <!-- AOS CSS読み込み -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header id="header" class="header">
+      <div class="menu__inner header__inner">
+        <h1 class="logo header-logo">
+          <a href="./index.html"
+            ><img src="./images/logo.png" alt="lushbiz"
+          /></a>
+        </h1>
+        <nav class="nav header-nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="">Home</a></li>
+            <li class="nav__item"><a href="">Salon</a></li>
+            <li class="nav__item"><a href="">Hair make</a></li>
+            <li class="nav__item"><a href="">Information</a></li>
+            <li class="nav__item"><a href="">Recruit</a></li>
+            <li class="nav__item reserve-btn"><a href="">Reservation</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="hamburger"><span></span></div>
+      <nav class="sp-nav header-nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="">Home</a></li>
+          <li class="nav__item"><a href="">Salon</a></li>
+          <li class="nav__item"><a href="">Hair make</a></li>
+          <li class="nav__item"><a href="">Information</a></li>
+          <li class="nav__item"><a href="">Recruit</a></li>
+          <li class="nav__item reserve-btn"><a href="">Reservation</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- mainvisual -->
+    <div class="mainvisual">
+      <img src="./images/mainvisual.png" alt="美容室店内の様子" />
+      <div class="mv-randomImg">
+        <img
+          src="./images/mv_first.jpg"
+          alt="女性の見れ写真1"
+          class="mv_first fadein"
+        />
+        <img
+          src="./images/mv_second.jpg"
+          alt="女性の見れ写真2"
+          class="mv_second fadein"
+        />
+        <img
+          src="./images/mv_third.jpg"
+          alt="女性の見れ写真3"
+          class="mv_third fadein"
+        />
+      </div>
+    </div>
+
+    <!-- sectionArea -->
+    <main class="main">
+      <!-- topics -->
+      <section id="topics" class="topics">
+        <div class="contents__inner">
+          <h2 class="heading__h2">Topics</h2>
+          <ul class="topics__list">
+            <li
+              class="topics__item"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <div class="topics__img">
+                <img src="./images/topics1.jpg" alt="成人式のヘアセット" />
+              </div>
+              <h3 class="heading__h3">2024年LushBiz成人式について</h3>
+              <p class="sec__text topics__text">
+                2023年にご成人を迎えられるみなさま、おめでとうございます。今年もLushBizでは一生に一度の門出を彩るお手伝いを指させていただきます。
+              </p>
+            </li>
+            <li
+              class="topics__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div class="topics__img">
+                <img src="./images/topics2.jpg" alt="髪を切る様子" />
+              </div>
+              <h3 class="heading__h3">スタイリスト募集中</h3>
+              <p class="sec__text topics__text">
+                スタイリストを1名募集しています。詳しい募集条件等はrecruitページよりご確認ください。その他不明点ございましたらお問い合わせくださいませ。
+              </p>
+            </li>
+            <li
+              class="topics__item"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <div class="topics__img">
+                <img src="./images/topics3.jpg" alt="美容室の店内風景" />
+              </div>
+              <h3 class="heading__h3">新店舗が12月にオープンします</h3>
+              <p class="sec__text topics__text">
+                この度、LushBiz大阪店がオープンする運びとなりました。これからもお客さまの人生を晴れやかなものにできるお手伝いを我々LushBizにさせていただければと存じます。
+              </p>
+            </li>
+            <li
+              class="topics__item"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
+              <div class="topics__img">
+                <img src="./images/topics4.jpg" alt="髪質改善" />
+              </div>
+              <h3 class="heading__h3">髪質改善プランを導入しました。</h3>
+              <p class="sec__text topics__text">
+                この度、髪質改善が新規プランとして正式に導入することに決まりました。くせ毛やうねりを無くすことのできるキープ力の高い髪質改善です。
+              </p>
+            </li>
+          </ul>
+          <div class="btn-area">
+            <a href="" class="btn">More</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about-us" class="about-us">
+        <div class="contents__inner">
+          <div
+            class="about-us__area"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <h2 class="heading__h2">About Us</h2>
+            <p class="sec__text">
+              LushBizはお客さまの生きる時間を少しでもはれやかに、そして彩り豊かにして光り輝く人生を歩んでほしい。と思っています。<br />
+              そのために少しでもくつろいでもらいながら、きれいになるためのお手伝いをさせていただきたく思います。<br />
+              ご来店になる際は、ぜひご自身のなりたいイメージに心を躍らせていらっしゃいませ。
+            </p>
+            <div class="btn-area">
+              <a href="" class="btn">More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="stylist" class="stylist">
+        <div class="stylist__inner" data-aos="fade" data-aos-duration="2000">
+          <div class="stylist-contents">
+            <h2 class="heading__h2">Stylist</h2>
+            <div class="stylist__map">
+              <div class="stylist__box">
+                <img src="./images/stylist_1.png" alt="" />
+                <p><span>Hair Designer</span>RIKA</p>
+              </div>
+              <div class="stylist__box">
+                <img src="./images/stylist_2.png" alt="" />
+                <p><span>Hair Designer</span>MINA</p>
+              </div>
+              <div class="stylist__box">
+                <img src="./images/stylist_3.png" alt="" />
+                <p><span>Hair Designer</span>HITOMI</p>
+              </div>
+              <div class="stylist__box">
+                <img src="./images/stylist_4.png" alt="" />
+                <p><span>Hair Designer</span>KAZUKI</p>
+              </div>
+              <div class="stylist__box">
+                <img src="./images/dummy.png" alt="" />
+                <p><span>Hair Designer</span>Comming Soon...</p>
+              </div>
+              <div class="stylist__box">
+                <img src="./images/dummy.png" alt="" />
+                <p><span>Hair Designer</span>Comming Soon...</p>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-right">scroll</div>
+        </div>
+      </section>
+
+      <div id="guidance" class="guidance">
+        <div class="reserve" data-aos="fade-up" data-aos-duration="2000">
+          <p>サロンから予約をする</p>
+          <a href="" class="btn guidance-btn">こちら</a>
+        </div>
+        <ul
+          class="guidance-list hairsalon"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <li class="guidance__item">
+            <div class="guidance__item--bg-white">
+              <p>はじめてヘアサロンを<br />ご利用になるお客様さまへ</p>
+              <a href="" class="btn guidance-btn">こちら</a>
+            </div>
+          </li>
+          <li class="guidance__item aesthesalon">
+            <div class="guidance__item--bg-white">
+              <p>はじめてエステサロンを<br />ご利用になるお客様さまへ</p>
+              <a href="" class="btn guidance-btn">こちら</a>
+            </div>
+          </li>
+          <li class="guidance__item beautyhair">
+            <div class="guidance__item--bg-white">
+              <p>はじめて髪質改善を<br />ご利用になるお客様さまへ</p>
+              <a href="" class="btn guidance-btn">こちら</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="menu__inner footer__inner">
+        <div class="logo footer-logo">
+          <a href="./index.html"
+            ><img src="./images/logo.png" alt="lushbiz"
+          /></a>
+        </div>
+        <nav class="nav footer-nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="">Home</a></li>
+            <li class="nav__item"><a href="">Salon</a></li>
+            <li class="nav__item"><a href="">Hair make</a></li>
+            <li class="nav__item"><a href="">Information</a></li>
+            <li class="nav__item"><a href="">Recruit</a></li>
+            <li class="nav__item reserve-btn"><a href="">Reservation</a></li>
+          </ul>
+          <ul class="nav__list-salon">
+            <li class="nav__item-salon">
+              <a href="">はじめてヘアサロンをご利用の方へ</a>
+            </li>
+            <li class="nav__item-salon">
+              <a href="">はじめてエステサロンをご利用の方へ</a>
+            </li>
+            <li class="nav__item-salon">
+              <a href="">はじめて髪質改善をご利用の方へ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <div class="scroll-top">
+      <a href="./index.html">
+        <img src="./images/scroll-top.png" alt="トップへ戻る" />
+        Top
+      </a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- slickのJavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- AOSのJavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- index -->
+    <script src="./js/script.js"></script>
+  </body>
+  <!--変更後-->
+</html>
