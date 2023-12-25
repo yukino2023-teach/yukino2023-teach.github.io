@@ -73,6 +73,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  body{
+    font-size: 14px;
+  }
   .pc{
     display: none;
   }
@@ -201,6 +204,11 @@
 @media screen and (max-width: 500px) {
   .header{
     height: auto;
+  }
+  .header.is-active {
+    opacity: 0.8;
+    height: 55px;
+    background-color: #e6f3ee;
   }
   .header__inner{
     margin: 10px 0;
@@ -410,6 +418,25 @@
     -webkit-transform: scale(1, 0);
     -webkit-transform-origin: 0 100%;
     transform-origin: 0 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .stylist__inner {
+    background-image: url(../images/bg-lushbiz-sp.png);
+    background-position: center;
+    background-size: 90%;
+  }
+  .stylist-contents{
+    display: block;
+  }
+  .stylist__map{
+    width: 100%;
+  }
+  .scroll-right{
+    text-align: left;
+  }
+  .scroll-right::after{
+    width: 90%;
   }
 }
 
