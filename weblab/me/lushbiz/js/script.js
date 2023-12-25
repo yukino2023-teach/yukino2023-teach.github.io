@@ -74,3 +74,40 @@ $('.hamburger').click(function() {
   $('.sp-nav').fadeToggle();
   $('.hamburger').toggleClass('open');
 });
+
+$(function(){
+  $('.slider').slick({
+    autoplay: true, 
+    autoplaySpeed: 0,
+    speed: 5000,
+    cssEase: "linear",
+    slidesToShow: 4.5,
+    swipe: true,
+    responsive: [
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 420,
+        settings: {
+          slidesToShow: 1.5,
+        }
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ],
+  });
+});

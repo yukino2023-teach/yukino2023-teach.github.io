@@ -60,22 +60,31 @@
 
     <!-- mainvisual -->
     <div class="mainvisual">
-      <img src="./images/mainvisual.png" alt="美容室店内の様子" />
+      <picture>
+        <source srcset="./images/mainvisual-sp.png" media="(max-width: 767px)">
+        <img src="./images/mainvisual.png" alt="美容室店内の様子" />
+      </picture>
       <div class="mv-randomImg">
-        <img
-          src="./images/mv_first.jpg"
-          alt="女性の見れ写真1"
-          class="mv_first fadein"
-        />
-        <img
-          src="./images/mv_second.jpg"
-          alt="女性の見れ写真2"
-          class="mv_second fadein"
-        />
+        <picture>
+          <source srcset="./images/mv_first-sp.jpg" media="(max-width: 767px)">
+          <img
+            src="./images/mv_first.jpg"
+            alt="女性の見れ写真1"
+            class="mv_first fadein"
+          />
+        </picture>
+        <picture>
+          <source srcset="./images/mv_second-sp.jpg" media="(max-width: 767px)">
+          <img
+            src="./images/mv_second.jpg"
+            alt="女性の見れ写真2"
+            class="mv_second fadein"
+          />
+        </picture>
         <img
           src="./images/mv_third.jpg"
           alt="女性の見れ写真3"
-          class="mv_third fadein"
+          class="mv_third fadein pc"
         />
       </div>
     </div>
@@ -147,6 +156,9 @@
       </section>
 
       <section id="about-us" class="about-us">
+        <div class="about-us__img sp">
+          <img src="./images/aboutus-sp.jpg" alt="">
+        </div>
         <div class="contents__inner">
           <div
             class="about-us__area"
@@ -170,27 +182,33 @@
         <div class="stylist__inner" data-aos="fade" data-aos-duration="2000">
           <div class="stylist-contents">
             <h2 class="heading__h2">Stylist</h2>
-            <div class="stylist__map">
+            <div class="stylist__map slider">
+              <!-- Slides -->
               <div class="stylist__box">
                 <img src="./images/stylist_1.png" alt="" />
                 <p><span>Hair Designer</span>RIKA</p>
               </div>
+              <!-- Slides -->
               <div class="stylist__box">
                 <img src="./images/stylist_2.png" alt="" />
                 <p><span>Hair Designer</span>MINA</p>
               </div>
+              <!-- Slides -->
               <div class="stylist__box">
                 <img src="./images/stylist_3.png" alt="" />
                 <p><span>Hair Designer</span>HITOMI</p>
               </div>
+              <!-- Slides -->
               <div class="stylist__box">
                 <img src="./images/stylist_4.png" alt="" />
                 <p><span>Hair Designer</span>KAZUKI</p>
               </div>
+              <!-- Slides -->
               <div class="stylist__box">
                 <img src="./images/dummy.png" alt="" />
                 <p><span>Hair Designer</span>Comming Soon...</p>
               </div>
+              <!-- Slides -->
               <div class="stylist__box">
                 <img src="./images/dummy.png" alt="" />
                 <p><span>Hair Designer</span>Comming Soon...</p>

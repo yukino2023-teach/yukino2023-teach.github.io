@@ -68,7 +68,26 @@
   padding: 0 16px;
 }
 
+.sp{
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
+  .pc{
+    display: none;
+  }
+  .sp{
+    display: block;
+  }
+  .heading__h2{
+    font-size: 20px;
+    padding-top: 42px;
+  }
+  .heading__h2::before{
+    width: 12px;
+    height: 28px;
+    content: url(../images/heading-style-sp.png);
+  }
 }
 
 /* header */
@@ -180,6 +199,12 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .header{
+    height: auto;
+  }
+  .header__inner{
+    margin: 10px 0;
+  }
   .logo {
     width: 100px;
   }
@@ -231,6 +256,18 @@
 }
 /* スマホ用記述 */
 @media screen and (max-width: 767px) {
+  .mainvisual{
+    padding-top: 55px;
+  }
+  .mv-randomImg .mv_first{
+    top: 73px;
+    width: 35.7%;
+  }
+  .mv-randomImg .mv_second{
+    width: 63.7%;
+    top: auto;
+    bottom: -15px;
+  }
 }
 
 .topics {
@@ -275,6 +312,21 @@
   box-sizing: border-box;
   background-color: #ffffff;
 }
+@media screen and (max-width: 767px) {
+  .about-us{
+    background-image: none;
+  }
+  .about-us__area{
+    padding: 11px 0;
+  }
+  .about-us__img{
+    opacity: 0.5;
+  }
+  .about-us__area{
+    width: 100%;
+  }
+}
+
 
 .stylist__inner {
   position: relative;
@@ -293,11 +345,10 @@
 }
 .stylist__map {
   display: flex;
-  width: 64.5%;
+  width: 85%;
   margin-bottom: 30px;
   overflow-x: scroll;
   overflow-y: hidden;
-
   gap: 1.875rem;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -306,7 +357,7 @@
   display: none;
 }
 .stylist__box {
-  min-width: 165px;
+  padding-left: 30px;
 }
 .stylist__box p,
 .stylist__box span {
@@ -408,7 +459,7 @@
 .guidance__item--bg-white p {
   margin-bottom: 24px;
 }
-@media screen and (max-width: 666px) {
+@media screen and (max-width: 767px) {
   .guidance-list {
     display: block;
   }
@@ -461,4 +512,25 @@
 .scroll-top a img {
   width: 36.18px;
   height: 34px;
+}
+@media screen and (max-width: 767px) {
+  .footer .menu__inner{
+    display: block;
+  }
+  .footer-nav{
+    display: block;
+  }
+  .footer .nav__list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px 22px;
+    margin-bottom: 30px;
+  }
+  .footer .reserve-btn{
+    margin-top: 0;
+  }
+  .nav__item-salon a{
+    letter-spacing: 0.01em;
+  }
 }
