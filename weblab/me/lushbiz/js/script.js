@@ -1,27 +1,29 @@
 AOS.init();
-$(function (){
-    $('hamburger').on('click', function (){
-        $('.sp-nav').fadeToggle();
-        $('hamburger').toggleClass('open');
-    });
+$(function () {
+  $("hamburger").on("click", function () {
+    $(".sp-nav").fadeToggle();
+    $("hamburger").toggleClass("open");
+  });
 });
 
-$(function(){
-  $(window).scroll(function (){
-      $('.fadein').each(function(){
-          var position = $(this).offset().top;
-          var scroll = $(window).scrollTop();
-          var windowHeight = $(window).height();
-          if (scroll > position - windowHeight + 200){
-              $(function(){
-                  $('.fadein').each(function(i){
-                      $(this).delay(i * 200).queue(function(){
-                          $(this).addClass('active');
-                      });
-                  });
+$(function () {
+  $(window).scroll(function () {
+    $(".fadein").each(function () {
+      var position = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > position - windowHeight + 200) {
+        $(function () {
+          $(".fadein").each(function (i) {
+            $(this)
+              .delay(i * 200)
+              .queue(function () {
+                $(this).addClass("active");
               });
-          }
-      });
+          });
+        });
+      }
+    });
   });
 });
 
@@ -34,21 +36,21 @@ $(window).scroll(function () {
   }
 });
 
- //ページ内スクロール
+//ページ内スクロール
 $('a[href^="#"]').on("click", function () {
-    var speed = 300;
-    var href = $(this).attr("href");
-    var target = $(href == "#" || href == "" ? "html" : href);
-    var position = target.offset().top;
-    $("html, body").animate(
-      {
-        scrollTop: position,
-      },
-      speed,
-      "swing"
-    );
-    return false;
-  });
+  var speed = 300;
+  var href = $(this).attr("href");
+  var target = $(href == "#" || href == "" ? "html" : href);
+  var position = target.offset().top;
+  $("html, body").animate(
+    {
+      scrollTop: position,
+    },
+    speed,
+    "swing"
+  );
+  return false;
+});
 
 //ページトップへ戻る
 var $pageTop = $(".scroll-top");
@@ -70,14 +72,14 @@ $pageTop.on("click", function () {
 });
 
 // スマホハンバーガーメニュー ナビゲーションクリックでも消える
-$('.hamburger').click(function() {
-  $('.sp-nav').fadeToggle();
-  $('.hamburger').toggleClass('open');
+$(".hamburger").click(function () {
+  $(".sp-nav").fadeToggle();
+  $(".hamburger").toggleClass("open");
 });
 
-$(function(){
-  $('.slider').slick({
-    autoplay: true, 
+$(function () {
+  $(".slider").slick({
+    autoplay: true,
     autoplaySpeed: 0,
     speed: 5000,
     cssEase: "linear",
@@ -88,14 +90,14 @@ $(function(){
         breakpoint: 750,
         settings: {
           slidesToShow: 3,
-        }
+        },
       },
       {
         breakpoint: 550,
         settings: {
           slidesToShow: 2,
-        }
-      }
+        },
+      },
     ],
   });
 });
