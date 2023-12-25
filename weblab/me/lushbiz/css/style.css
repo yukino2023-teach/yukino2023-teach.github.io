@@ -65,6 +65,7 @@
   align-items: center;
   max-width: 1080px;
   margin: 0 auto;
+  padding: 0 16px;
   width: 90%;
 }
 
@@ -112,8 +113,6 @@
   background-color: #e6f3ee;
 }
 .header__inner {
-  width: 100%;
-  max-width: 1080px;
   margin: 8px auto 70px;
 }
 .nav__list {
@@ -130,6 +129,18 @@
   border: 1px solid #000000;
 }
 @media screen and (max-width: 1000px) {
+  .header{
+    height: 70px;
+  }
+  .header.is-active{
+    height: 70px;
+  }
+  .header__inner{
+    margin: 8px auto;
+  }
+  .logo{
+    width: 120px;
+  }
   .header-nav {
     display: none;
   }
@@ -533,7 +544,7 @@
   position: fixed;
   right: 10px;
   bottom: 15px;
-  z-index: 9999;
+  z-index: 10;
   width: 60px;
   height: 60px;
   padding: 5px;
@@ -566,5 +577,15 @@
   }
   .nav__item-salon a{
     letter-spacing: 0.01em;
+  }
+  .scroll-top a{
+    width: 40px;
+    height: 40px;
+    font-size: 8px;
+    padding: 3px;
+  }
+  .scroll-top a img {
+    width: 26.18px;
+    height: 24px;
   }
 }
