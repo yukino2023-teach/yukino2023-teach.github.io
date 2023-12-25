@@ -28,7 +28,7 @@
 .contents__inner {
   max-width: 920px;
   margin: 0 auto;
-  padding: 0 16px;
+  width: 90%;
 }
 .sec__text {
   line-height: 1.625;
@@ -65,7 +65,7 @@
   align-items: center;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 0 16px;
+  width: 90%;
 }
 
 .sp{
@@ -85,6 +85,9 @@
   .heading__h2{
     font-size: 20px;
     padding-top: 42px;
+  }
+  .heading__h3{
+    font-size: 18px;
   }
   .heading__h2::before{
     width: 12px;
@@ -266,6 +269,7 @@
 @media screen and (max-width: 767px) {
   .mainvisual{
     padding-top: 55px;
+    margin-bottom: 50px;
   }
   .mv-randomImg .mv_first{
     top: 73px;
@@ -371,6 +375,9 @@
 .stylist__box span {
   display: block;
   text-align: center;
+}
+.stylist__box p{
+  margin-top: 8px;
 }
 .scroll-right {
   position: relative;
