@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>izumi-numayama</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="humburger-main">
+            <span></span>
+        </div>
+        <nav class="sp-nav">
+            <ul>
+                <li>
+                    <a href="#Works">Works</a>
+                </li>
+                <li>
+                    <a href="#About">About</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="header-nav-main">
+            <ul>
+                <li class="pc-none">
+                    mamorable design
+                </li>
+                <li class="gNav-main">
+                    <a href="#Works"><span class=sp-none>●</span> Works</a>
+                </li>
+                <li class="gNav-main">
+                    <a href="#About"><span class=sp-none>●</span> About</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="siteTtl-main sp-none">
+            mamorable design
+        </div>
+
+    </header>
+
+    <thumb>
+        <div class="pararaxArea" id="js-parallaxArea">
+            <div class="js-parallax pararaxItem">
+                <img src="./img/FVpc@4x.png" alt="FV" class="FV">
+            </div>
+        </div>
+        <h1 class="mainVisual-first">
+            memorable design
+        </h1>
+        <h1 class="mainVisual-second">
+            memorable<br class="pc"> design
+        </h1>
+        <h1 class="mainVisual-third">
+            memorable design
+        </h1>
+    </thumb>
+    <arrow>
+        <div class="arrow">
+            scroll
+        </div>
+        <div class="arrow-span">
+            <span class="arrow-down"></span>
+        </div>
+    </arrow>
+
+    <section id="Works">
+        <h2 class="category-main">
+            Works
+        </h2>
+        <ul class="photo-list">
+            <li class="photo-img">
+                <img src="./img/kadai1@2x.png" alt="デザスタモバイルバナー">
+            </li>
+            <li class="photo-img">
+                <img src="./img/kadai2.jpg" alt="TRRRRIPバナー" class="sp-none">
+            </li>
+            <li class="photo-img">
+                <img src="./img/kadai3(POP).jpg" alt="ハンバーガー（POP）バナー" class="sp-none">
+            </li>
+        </ul>
+        <ul class="photo-list">
+            <li class="photo-img">
+                <img src="./img/kadai3@2x.png" alt="ハンバーガー（高級感）バナー" class="sp-none">
+            </li>
+            <li class="photo-img">
+                <img src="./img/kadai4.png" alt="コワーキングスペースLP" class="sp-none">
+            </li>
+            <li class="photo-img">
+                <img src="./img/kadai5_pc@2x.png" alt="美容室LP" class="sp-none">
+            </li>
+        </ul>
+        <div class="works-btn">
+            <a href="./works.html" class="btn-more">もっと見る ▶</a>
+        </div>
+    </section>
+
+    <section id="About">
+        <h2 class="category-main">
+            About
+        </h2>
+        <div class="about-contents">
+            <img src="./img/about@2x.png" alt="About" class="about-img">
+            <ul class="about-contents-inner">
+                <li class="about-name">
+                    沼山 いずみ<span class="about-mane-ro">Izumi Numayama</span>
+                </li>
+                <li class="about-text">
+                    福島県生まれ。中学時代に始めたイラスト制作からデザインに興味を持つ。大学で
+                    は心理学を専攻し、その後事務職として建設系の会社に就く。趣味で続けていたイ
+                    ラストや手芸からWEBデザインにも興味を持ち、WEBサイトの制作を始める。
+                </li>
+                <div class="about-btn">
+                    <a href="./about.html" class="btn-more">もっと見る ▶</a>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Contact-main">
+        <h2 class="category-main">
+            Contact
+        </h2>
+        <div class="contact-contents-main">
+            <p class="contact-text-main">
+                お問い合わせを検討いただきありがとうございます！気になることがあれば何でもお寄せください。できるかぎり丁寧に答えします。
+            </p>
+            <form class="contact-form-main">
+                <div class="contact-col-main">
+                    <label for="contact-category" class="form-label-main">お問い合わせ内容</label>
+                </div>
+                <div class="contact-item-main">
+                    <select name="contact-category-main">
+                        <option value="mitumori">選択してください</option>
+                        <option value="mitumori">見積を依頼したい</option>
+                        <option value="zatudan">雑談したい</option>
+                    </select>
+                </div>
+                <div class="contact-col-main">
+                    <label for="name" class="form-label-main">名前</label>
+                </div>
+                <div class="contact-item-main">
+                    <input id="name" type="text" name="yourname" placeholder="山田　花子">
+                </div>
+                <div class="contact-col-main">
+                    <label for="mail" class="form-label-main">メールアドレス</label>
+                </div>
+                <div class="contact-item-main">
+                    <input id="mail" type="text" name="yourmail" placeholder="aaaaaaaaa@gmail.com">
+                </div>
+                <div class="contact-col-main">
+                    <label for="message" class="form-label-main">本文</label>
+                </div>
+                <div class="contact-item-last-main">
+                    <textarea id="message" name="message" placeholder="お気軽にご質問をご記入ください。"></textarea>
+                </div>
+                <div class="contact-btn-main">
+                    <a href="" class="btn-inquiry-main">お問い合わせをする<span class="arrow-right-main"></span></a>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <footer class="copyright-main">
+        &copy;︎memorable design
+    </footer>
+
+    <script>
+        // パララックスのターゲット取得
+        const target = document.getElementsByClassName('js-parallax');
+        // パララックスを行うエリア
+        const activeArea = document.getElementById('js-parallaxArea');
+        // ウィンドウの中心の取得
+        const xCenter = window.innerWidth / 2;
+        const yCenter = window.innerHeight / 2;
+        // パララックスで移動させる距離
+        const parallaxVal = 8; //中心からマウスの距離の10分１移動
+
+        // マウスがパララックスエリアに入った時のイベント
+        activeArea.addEventListener('mousemove', (e) => {
+            // マウスの座標を取得して 中心からの距離取得、 そこからpararaxValで距離を調整
+            const x = (xCenter - e.pageX) / parallaxVal;
+            const y = (yCenter - e.pageY) / parallaxVal;
+            // パララックスさせる要素にstyleの指定
+            for (var i = 0; i < target.length; i++) {
+                target[i].style.transform = `translate(${-x}px, ${-y}px)`;
+            }
+        });
+
+        $('.humburger-main').on('click', function () {
+            $('.sp-nav').fadeToggle();
+            $('.humburger-main').toggleClass('open');
+        });
+    </script>
+</body>
+
+</html>

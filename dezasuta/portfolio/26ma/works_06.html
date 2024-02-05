@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYUMI PORTFOLIO</title>
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+<!-- ページ内リンク -->
+<a href="#" id="page-top">
+    <img src="./images/to_top@3x.png">
+</a>
+
+<body>
+
+    <!-- 雨粒 -->
+    <ul class="drop">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <header>
+        <nav class="header_nav">
+            <ul>
+                <li>
+                    <a href="./index.html">
+                        HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="./works.html">
+                        WORKS
+                    </a>
+                </li>
+                <li>
+                    <a href="#ABOUT">
+                        ABOUT
+                    </a>
+                </li>
+                <li>
+                    <a href="#CONTACT">
+                        CONTACT
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger"><span></span></div>
+        <nav class="sp_nav">
+            <ul>
+                <li>
+                    <a href="./index.html">
+                        HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="./works.html">
+                        WORKS
+                    </a>
+                </li>
+                <li>
+                    <a href="#ABOUT">
+                        ABOUT
+                    </a>
+                </li>
+                <li>
+                    <a href="#CONTACT">
+                        CONTACT
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <section class="pc_works_06">
+        <img src="./images/works_06_mockup.png" alt="コーディング課題のモックアップ画像">
+
+
+        <table class="pc_works_designcafe">
+            <tr>
+                <th>
+                    架空のカフェ　ホームページ　「デザインカフェ」
+                </th>
+            </tr>
+            <tr class="works_detail">
+                <td class="td_left">カテゴリー</td>
+                <td class="td_right"> コーディング</td>
+            </tr>
+
+            <tr class="works_detail">
+                <td class="td_left">担当範囲</td>
+                <td class="td_right"> コーディング</td>
+            </tr>
+            <tr class="works_detail">
+                <td class="td_left">使用ツール</td>
+                <td class="td_right"> VSCODE</td>
+            </tr>
+            <tr class="works_detail">
+                <td class="td_left">使用言語</td>
+                <td class="td_right"> HTML / CSS / jQuery</td>
+            </tr>
+            <tr class="works_detail">
+                <td class="td_left">制作期間</td>
+                <td class="td_right">
+                    6日</td>
+            </tr>
+        </table>
+
+        <div class="designcafe_lp">
+            <span class="designcafe_lp_pc">
+                <img src="./images/works_06_detail_pc@2x.png" alt="PC版LPデザイン課題の画像">
+            </span>
+            <span class="designcafe_lp_sp">
+                <img src="./images/works_06_detail_sp@2x.png" alt="スマートフォン版LPデザイン課題の画像">
+            </span>
+        </div>
+
+        <div class="pc_button_back">
+            <a href="./works.html">
+                一覧に戻る
+            </a>
+        </div>
+
+    </section>
+
+    <section class="CONTACT">
+        <div class="pc_contact">
+            <img src="./images/contact@2x.png" alt="フォントの画像">
+        </div>
+        <p>
+            当ポートフォリオサイトにご訪問いただき、誠にありがとうございます。<br>
+            制作のご依頼やご相談、ご不明な点等ございましたらお気軽にお問い合わせください。<br>
+            3営業日以内にご連絡をさせていただきます。
+        </p>
+        <div class="pc_button_contact">
+            <a href="./index.html #CONTACT">
+                まずは相談してみる
+            </a>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="FOOTER">
+
+            <div class="footer_box">
+                <ul>
+                    <li>
+                        <a href="./index.html">
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./works.html">
+                            WORKS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#ABOUT">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#CONTACT">
+                            CONTACT
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright">
+                    ©AYUMI.M 2023
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <!-- 以下 jQueryの記述 -->
+    <script>
+
+        $(function () {
+            // ハンバーガーメニュー
+            $(function () {
+                $('.hamburger').on('click', function () {
+                    $('.sp_nav').fadeToggle();
+                    $('.hamburger').toggleClass('open');
+                });
+                $(".sp_nav").click(function () {
+                    $('.sp_nav').fadeToggle();
+                    $("hamburger").removeClass("open");
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>

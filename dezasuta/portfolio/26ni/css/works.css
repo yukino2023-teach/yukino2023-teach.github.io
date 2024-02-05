@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+.works-container {
+    display: flex;
+    margin-top: 50px;
+}
+
+.sticky {
+    position: sticky;
+    height: 100%;
+    top: 20px;
+    z-index: 1000;
+}
+
+.btn-filter {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 36px;
+    color: #1c529c;
+    margin: 65px 0 0 5%;
+}
+
+.all {
+    border-bottom: 2px solid #1c529c;
+}
+.tab-area {
+    cursor: pointer;
+}
+.arrow-down {
+    display: inline-block;
+    vertical-align: middle;
+    color: #1c529c;
+    line-height: 1;
+    width: 0.7em;
+    height: 0.7em;
+    border: 0.1em solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateY(-25%) rotate(135deg);
+    margin-left: 114px;
+    margin-top: -50px;
+    transition: 0.3s;
+}
+.arrow-up{
+    transform:  rotate(-45deg);
+    margin-top: -35px;
+}
+
+.panel {
+    display: none;
+}
+.active-aco{
+    padding: 10px 0;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.main-contents {
+    margin-top: 82px;
+    display: inline;
+}
+.main-contents-img {
+    display: block;
+    border: 1px solid #222222;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.description {
+    max-width: 1200px;
+    background-color: #e2e2e2;
+    width: 88%;
+    margin: 30px auto 20%;
+}
+
+.dli-plus {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    line-height: 1;
+    width: 1em;
+    height: 0.1em;
+    background: currentColor;
+    border-radius: 0.1em;
+    position: relative;
+    margin: 0 18px 0 25px;
+}
+
+.dli-plus.open {
+    transform: rotate(45deg);
+}
+
+.dli-plus::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: inherit;
+    transform: rotate(90deg);
+}
+
+.main-contents-description-title {
+    font-weight: bold;
+    color: #fff;
+    background-color: #1c529c;
+    line-height: 51px;
+    position: relative;
+}
+
+.main-contents-category {
+    display: inline-block;
+    font-weight: lighter;
+    position: absolute;
+    margin-left: auto;
+    right: 20px;
+}
+
+.works-wrapper {
+    display: none;
+}
+
+.main-contents1-description,
+.main-contents2-description,
+.main-contents3-description,
+.main-contents4-description,
+.main-contents5-description,
+.main-contents6-description,
+.main-contents7-description {
+    display: flex;
+}
+
+.main-contents-description-ul {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1c529c;
+    width: 40%;
+    margin: 30px 2% 68px 5%;
+}
+
+.main-contents-description-li {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1c529c;
+    line-height: 30px;
+}
+
+.main-contents-description-li-span {
+    margin-left: 18%;
+}
+
+.main-contents-description-li-span-soft {
+    margin-left: 7%;
+}
+
+.main-contents-description-img {
+    display: flex;
+    justify-content: center;
+}
+
+.main-contents-description-img1 {
+    height: 50%;
+    width: 50%;
+    margin-left: 2%;
+}
+.main-contents-description-img2 {
+    height: 50%;
+    width: 30%;
+    margin-left: 2%;
+}
+
+.close {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222222;
+    height: 15px;
+    margin: 0 0 0 27px;
+    padding-bottom: 30px;
+}
+
+.btn-close {
+    display: inline-block;
+    padding: 0 18px 5px 0;
+}
+
+.btn-close::before,
+.btn-close::after {
+    display: block;
+    content: "";
+    width: 15px;
+    height: 1px;
+    background: #1c529c;
+}
+.btn-close::before {
+    transform: rotate(-45deg);
+}
+.btn-close::after {
+    transform: rotate(45deg);
+}
+#Works{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+    .main-contents1-description,
+    .main-contents2-description,
+    .main-contents3-description,
+    .main-contents4-description,
+    .main-contents5-description,
+    .main-contents6-description,
+    .main-contents7-description {
+        flex-direction: column-reverse;
+    }
+    .main-contents-description-ul {
+        width: 90%;
+        margin: auto;
+        padding: 16px;
+    }
+
+    .btn-filter {
+        display: none;
+    }
+    .main-contents-description-title{
+        font-size: 14px;
+        overflow-x: hidden;
+        line-height: 30px;
+        padding: 10px 0 30px;
+    }
+    .main-contents-category{
+        display: block;
+        line-height: 1;
+        margin-left: auto;
+        padding-bottom: 10px;
+    }
+    .main-contents-img{
+        width: 80%;
+    }
+}
+.accordion-content {
+    display: none;
+}

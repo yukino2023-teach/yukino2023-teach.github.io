@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ポートフォリオ_contact</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header_container_item">
+        <h1 class="logo_item">
+          <a href="./index.html"> アナタ、へ。 </a>
+        </h1>
+      </div>
+
+      <nav class="header_nav header_nav--black">
+        <ul>
+          <li>
+            <a href="./index.html#concept"> concept </a>
+          </li>
+          <li>
+            <a href="./index.html#works"> works </a>
+          </li>
+          <li>
+            <a href="./index.html#profile"> profile </a>
+          </li>
+          <li>
+            <a href="./index.html#contact"> contact </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hamburger"><span></span></div>
+      <nav class="header_nav-sp">
+        <ul>
+          <li>
+            <a href="./index.html#concept"> concept </a>
+          </li>
+          <li>
+            <a href="./index.html#works"> works </a>
+          </li>
+          <li>
+            <a href="./index.html#profile"> profile </a>
+          </li>
+          <li>
+            <a href="./index.html#contact"> contact </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contact-form">
+      <h2 class="title">contact</h2>
+      <p style="text-align: left; margin: 40px auto">
+        各種ご依頼やお問い合わせ、制作料金のご相談やご質問など、お気軽にこちらのフォームよりご送信ください。<br />３営業日以内でお返事いたします。
+      </p>
+      <form class="c-form">
+        <div class="c-form__item">
+          <label class="c-form__label" for="field-name"> お名前 </label>
+          <input
+            class="c-form__input"
+            id="field-name"
+            placeholder="山田 太郎"
+            type="text"
+            required="required"
+          />
+        </div>
+        <div class="c-form__item">
+          <label class="c-form__label" for="field-mail"> 社名/所属 </label>
+          <input
+            class="c-form__input"
+            id="field-mail"
+            placeholder="社名/所属をご入力ください"
+            type="email"
+            required="required"
+          />
+        </div>
+        <div class="c-form__item">
+          <label class="c-form__label" for="field-mail"> メールアドレス </label>
+          <input
+            class="c-form__input"
+            id="field-mail"
+            placeholder="aaa@aaa.co.jp"
+            type="email"
+            required="required"
+          />
+        </div>
+        <div class="c-form__item">
+          <label class="c-form__label" for="field-message"
+            >メッセージ内容</label
+          >
+          <textarea
+            class="c-form__input"
+            id="field-message"
+            placeholder="お問合せ内容をご入力ください"
+          ></textarea>
+        </div>
+        <div class="submit-btn">
+          <button type="btn">送信する</button>
+        </div>
+      </form>
+    </section>
+    <footer class="footer-planet">
+      <p class="copyright_contact">©アナタデザイン</p>
+    </footer>
+
+    <!-- script -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

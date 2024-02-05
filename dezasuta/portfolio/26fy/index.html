@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAFETE DESIGN</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap" rel="stylesheet">
+    <!--slick-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <!-- aos.css -->
+    <link rel="stylesheet" href="./css/aos.css">
+    <!--lightbox-->
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+    <link rel="stylesheet" href="./css/style.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <!-- aos. js -->
+    <script src="./js/aos.js"></script>
+    <!-- vivus.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
+    <!-- lazysizes.js -->
+    <script src="./js/lazysizes.min.js"></script>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#d60050">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div id="splash">
+        <div id="splash_logo">
+            <svg version="1.1" id="mask" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"	y="0px" viewBox="0 0 534.94 39.01" style="enable-background:new 0 0 426.9 169.2;" xml:space="preserve">
+                <g>
+                   <path class="cls-3" d="M89.34,1.79v30.69h17.44v5.93h-23.97V1.79h6.52Z"/>
+                   <path class="cls-3" d="M134.08,1.79l13.78,36.62h-6.59l-3.73-9.65h-13.51l-3.66,9.65h-6.39L127.76,1.79h6.32ZM130.75,9.18l-4.66,13.72h9.32l-4.66-13.72Z"/>
+                   <path class="cls-3" d="M164.44,18.5h15.11v5.99h-15.11v13.91h-6.52V1.79h23.7v5.86h-17.18v10.85Z"/>
+                   <path class="cls-3" d="M192.87,1.79h24.04v5.86h-17.51v9.19h15.51v5.93h-15.51v9.72h17.51v5.93h-24.04V1.79Z"/>
+                   <path class="cls-3" d="M255.85,1.79v5.86h-11.99v30.76h-6.52V7.65h-11.98V1.79h30.49Z"/>
+                   <path class="cls-3" d="M265.64,1.79h24.04v5.86h-17.51v9.19h15.51v5.93h-15.51v9.72h17.51v5.93h-24.04V1.79Z"/>
+                   <path class="cls-3" d="M333.75,1.79c4.84,0,8.71.85,11.62,2.56,2.91,1.71,4.96,3.85,6.16,6.42,1.2,2.58,1.8,5.31,1.8,8.19,0,4.39-1.03,8.28-3.1,11.65s-5.45,5.73-10.15,7.06c-1.42.31-2.83.51-4.23.6-1.4.09-3.19.13-5.36.13h-9.12V1.79h12.38ZM327.89,7.65v24.83h4.26c2.84,0,5.39-.36,7.66-1.07s4.02-2.29,5.26-4.73c.44-.67.82-1.59,1.13-2.76.31-1.18.47-2.54.47-4.09,0-3.99-1.09-7.03-3.26-9.09-2.18-2.06-5.35-3.1-9.52-3.1h-5.99Z"/>
+                   <path class="cls-3" d="M365.17,1.79h24.04v5.86h-17.51v9.19h15.51v5.93h-15.51v9.72h17.51v5.93h-24.04V1.79Z"/>
+                   <path class="cls-3" d="M415.1,7.58c-2.26,0-4.04.4-5.33,1.2s-1.93,1.89-1.93,3.26c0,1.16.59,2.07,1.76,2.73s3.03,1.4,5.56,2.2c2.57.8,4.69,1.58,6.36,2.33,1.67.76,3.1,1.86,4.3,3.33s1.8,3.33,1.8,5.59c0,1.86-.51,3.61-1.53,5.23-1.02,1.62-2.68,2.95-4.96,3.99s-5.2,1.56-8.75,1.56c-2.09,0-3.99-.21-5.73-.63s-3.75-1.08-6.06-1.96l-.87-.4,2.2-5.93,1,.4c4.04,1.51,7.37,2.26,9.99,2.26,2.4,0,4.33-.41,5.79-1.23s2.2-1.92,2.2-3.3c.04-1.33-.53-2.34-1.73-3.03s-3.13-1.43-5.79-2.23c-2.53-.8-4.62-1.58-6.26-2.33s-3.04-1.85-4.19-3.3-1.73-3.3-1.73-5.56c0-2,.56-3.77,1.66-5.33,1.11-1.55,2.71-2.77,4.79-3.66,2.09-.89,4.5-1.33,7.26-1.33,2.35,0,4.35.19,5.99.57,1.64.38,3.24.83,4.8,1.36l.73.27-2.13,5.93c-1.69-.67-3.25-1.17-4.7-1.5s-2.94-.5-4.49-.5Z"/>
+                   <path class="cls-3" d="M445.99,1.79v36.62h-6.52V1.79h6.52Z"/>
+                   <path class="cls-3" d="M490.67,34.61c-3.24,2.8-7.79,4.26-13.65,4.39-4.17,0-7.7-.92-10.59-2.76-2.89-1.84-5.04-4.2-6.46-7.09s-2.13-5.9-2.13-9.05.76-6.35,2.26-9.19c1.51-2.84,3.72-5.13,6.62-6.86s6.34-2.6,10.29-2.6c4.35,0,8.41,1.09,12.19,3.26l.93.53-2.73,4.99-.93-.4c-1.24-.67-2.68-1.23-4.29-1.7-1.62-.47-3.27-.7-4.96-.7-2.22,0-4.3.5-6.26,1.5s-3.53,2.44-4.73,4.33-1.8,4.07-1.8,6.56.59,4.73,1.76,6.72,2.8,3.56,4.86,4.69,4.4,1.7,7.02,1.7c1.42,0,2.59-.11,3.5-.33.91-.22,1.81-.58,2.7-1.07v-7.79h-9.59v-5.79h15.98v16.64Z"/>
+                   <path class="cls-3" d="M510.64,1.79l17.71,27.16V1.79h6.59v36.62h-7.92l-17.64-27.23v27.23h-6.52V1.79h7.79Z"/>
+                </g>
+                <g>
+                   <line class="cls-2" x1=".75" y1="23.24" x2="50.18" y2="23.24"/>
+                   <line class="cls-2" x1=".75" y1="35.77" x2="50.18" y2="35.77"/>
+                   <path class="cls-1" d="M48.6,11.76S28.96,3.91,27.22,3.21H2.34v7.56s23.62,0,24.77,0c.6-.24,21.49-8.6,21.49-8.6"/>
+                </g>
+           </svg>
+        </div>    
+    </div>
+    <div class="splashbg"></div><!---画面遷移用-->
+    <div id="container">
+        <header id="header">
+            <div class="header_container">
+               <h1 class="logo">
+                <a href="./index.html"><img src="./images/logo.png" alt="LAFETE DESIGN"></a>
+               </h1>
+               <nav class="header_nav">
+                   <ul>
+                       <li>
+                           <a href="./web.html">WEB DESIGN</a>
+                       </li>
+                       <li>
+                           <a href="./graphic.html">GRAPHIC DESIGN</a>
+                       </li>
+                       <li>
+                           <a href="./nekonote.html">NEKOnoTE</a>
+                       </li>
+                   </ul>
+                </nav>
+                <nav class="header_contact">
+                   <ul>
+                       <li>
+                           <a href="./about.html">ABOUT</a>
+                       </li>
+                       <li>
+                           <div class="gnv-border"></div>
+                       </li>
+                       <li>
+                           <a href="./contact.html">CONTACT</a>
+                       </li>
+                   </ul>
+               </nav>
+            </div>
+            <div class="hamburger"><span></span></div>
+            <nav class="sp_nav">
+                <ul>
+                    <li>
+                        <a href="./web.html">WEB DESIGN</a>
+                    </li>
+                    <li>
+                        <a href="./graphic.html">GRAPHIC DESIGN</a>
+                    </li>
+                    <li>
+                        <a href="./nekonote.html">NEKOnoTE</a>
+                    </li>
+                </ul>
+                <ul class="sp_nav_contact">
+                    <li>
+                        <a href="./about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <div class="gnv-border"></div>
+                    </li>
+                    <li>
+                        <a href="./contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="pc_only">
+                <div class="main_visual">
+                    <div class="mv_inner">
+                        <div class="mv_copy" data-aos="fade-up" data-aos-duration="1000">DESIGN<img src="./images/03X.png" alt="×">JIMU</div>
+                        <div class="mv_logo" data-aos="fade-up" data-aos-duration="1000">LAFETE DESIGN</div>
+                        <a href="./works/work_life.html">
+                            <img class="mv_work_img"  src="./images/01newwork.jpg" onmouseover="this.src='./images/01-2newwork.jpg'" 
+                            onmouseout="this.src='./images/01newwork.jpg'" alt="最新の制作実績" data-aos="fade-up" data-aos-duration="1000">
+                        </a>
+                        <a href="./works/work_life.html"><img class="circle_btn" src="./images/02newwork_button.png" alt="最新の制作実績へリンクするボタン" data-aos="fade-up" data-aos-duration="2000"></a>
+                    </div>
+                    <div class="mv_main">
+                        <img class="mv_img" src="./images/00top.jpg" alt="猫の手">
+                    </div>
+                </div>
+            </div>
+            <div class="sp_mv">
+                <div class="main_visual">
+                    <div class="mv_main">
+                        <img class="mv_img" src="./images/sp_top.jpg" alt="猫の手" data-aos-duration="1000">
+                    </div>
+                    <div class="mv_inner">
+                        <div class="mv_copy" data-aos="fade-up" data-aos-duration="1000">DESIGN<img src="./images/03X.png" alt="×">JIMU</div>
+                        <div class="mv_logo" data-aos="fade-up" data-aos-duration="1000">LAFETE DESIGN</div>
+                    </div>
+                    <div class="sp_mv_img">
+                        <a href="./works/work_life.html">
+                            <img class="mv_work_img" src="./images/01newwork.jpg" 
+                            onmouseover="this.src='./images/01-2newwork.jpg'" onmouseout="this.src='./images/01newwork.jpg'" alt="最新の制作実績" data-aos="fade-up" data-aos-duration="1000">
+                        </a>
+                        <a href="./works/work_life.html"><img class="circle_btn" src="./images/02newwork_button.png" alt="最新の制作実績へリンクするボタン" data-aos="fade-up" data-aos-duration="1000"></a>
+                    </div>
+                </div>
+            </div>  
+        </header>
+        <main>
+            <section class="about">
+                <h2 class="abou_title">
+                    <img src="./images/05lafete.png" alt="LAFETE" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
+                </h2>
+                <div class="pc-tab_only">
+                    <div class="about_inner">
+                        <div>
+                            <p class="about_lead" data-aos="fade-up" data-aos-duration="1000">あなたの<br>新しい一歩に<br>寄り添って</p>
+                        </div>
+                        <div>
+                            <img class="about_img" src="./images/04about.jpg" alt="猫がタイピングする様子" data-aos="fade-up" data-aos-duration="1000">
+                        </div>
+                        <div class="about_contents" data-aos="fade-up" data-aos-duration="1000">
+                            <p class="about_text">
+                                LAFETE DESIGN(ラフェット デザイン)は、WEB、GRAPHIC、NEKOnoTE(事務)を三本柱とし、
+                                新しく事業をスタートされる方へデザインだけでない、＋αのサポートをいたします。
+                            </p>
+                            <p class="bottom_space">
+                                わたしの＋αが形を変え、その先のお客様へ届くことを願って。<br>
+                                「ねこの手もかりたい」そんな時は、<br>LAFETE DESIGNへ。
+                            </p>
+                            <div class="about-btn">
+                                <a class="btn bgleft" href="./about.html"><span>ABOUT</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sp_about">
+                    <div class="about_inner">
+                        <div>
+                            <img class="about_img" src="./images/sp_top-about.jpg" alt="猫がタイピングする様子">
+                        </div>
+                        <div>
+                            <p class="about_lead">あなたの新しい一歩に<br>寄り添って</p>
+                        </div>
+                        <div class="about_contents">
+                            <p class="about_text">
+                                LAFETE DESIGN(ラフェット デザイン)は、WEB、GRAPHIC、NEKOnoTE(事務)をサービスの三本柱とし、
+                                新しく事業をスタートされる方へデザインだけでない、プラスαのサポートをいたします。
+                            </p>
+                            <p class="bottom_space">
+                                わたしのプラスαが形を変え、その先のお客様へプラスαとなることを願って。<br>
+                                「ねこの手もかりたい」そんな時は、<br>LAFETE DESIGNへ。
+                            </p>
+                            <div class="about-btn">
+                                <a class="btn bgleft" href="./about.html"><span>ABOUT</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </section>
+            <section class="service">
+                <h2 class="section_title">SERVICE</h2>
+                <div class="service_icon">
+                    <img src="./images/07neko.png" alt="黒い猫" class="pc-tab_only">
+                </div>
+                <div class="service_inner">
+                    <div class="service_contents" data-aos="fade-up" data-aos-duration="1000">
+                        <h3>DESIGN<img src="./images/06pc.png" alt="パソコンのアイコン"></h3>
+                        <div class="service_btn_block">
+                            <a class="btntextchange" href="./web.html"><span>WEB</span><span class="btnchange_ja">ウェブ</span></a>
+                            <a class="btntextchange" href="./graphic.html"><span>GRAPHIC</span><span class="btnchange_ja">グラフィック</span></a>
+                        </div>
+                    </div>
+                    <div class="service_center"><img src="./images/03X.png" alt="×"></div>
+                    <div class="service_icon">
+                        <img src="./images/07neko.png" alt="黒い猫" class="sp_service" data-aos="fade-down" data-aos-duration="1000">
+                    </div>
+                    <div class="service_contents" data-aos="fade-up" data-aos-duration="1000">
+                        <h3>NEKOnoTE</h3>
+                        <div class="service_btn_block">
+                            <a class="btntextchange" href="./nekonote.html"><span class="btnchange_ja">事務</span><span>NEKOnoTE</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="web-design">
+                <h2 class="section_title">WEB DESIGN</h2>
+                <div class="pc-tab_only">
+                    <div class="web-design_inner">
+                        <div class="web_gallery" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="work-type_pc-only">WEB SITE</div>
+                            <a class="work_link" href="./works/work_life.html"><img src="./images/08web01.jpg" alt="最新の制作実績"></a>
+                            <p class="work-title">HAIR SALON</p>
+                            <p class="work-client">LIFE hair design</p>
+                            <div class="work_btn">
+                                <a href="./works/work_life.html"><img class="circle_btn" src="./images/10click-here.png" alt="最新の制作実績へリンクするボタン"></a>
+                            </div>
+                        </div>
+                        <div class="web_gallery" data-aos="fade-up" data-aos-duration="2000">
+                            <p class="web_main_text">
+                                最近では、多くのお客様がサービスご利用前に会社名を検索します。その際に何もサイトが出てこないと不安になり、最初の貴重なアクションを逃す確率が高まります。集客と信頼のために、ホームページは必須な時代です。
+                            </p>
+                            <span class="work-type">WEB SITE</span>
+                            <a class="work_link" href="./works/work_kjex.html"><img src="./images/09web02.jpg" alt="ケイジェックス株式会社のサイト"></a>
+                            <p class="work-title">CORPORATE</p>
+                            <p class="work-client">ケイジェックス株式会社</p>
+                            <div class="work_btn">
+                                <a href="./works/work_kjex.html"><img class="circle_btn" src="./images/10click-here.png" alt="クリックボタン"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="web_sp">
+                    <p class="web_main_text">
+                        最近では、多くのお客様がサービスご利用前に会社名を検索します。その際に何もサイトが出てこないと不安になり、最初の貴重なアクションを逃す確率が高まります。集客と信頼のために、ホームページは必須な時代です。
+                    </p>
+                    <div class="sp_gallery">
+                        <div class="sp_gallery_img">
+                            <a class="sp_work_link" href="./works/work_life.html"><img src="./images/web/life.jpg" alt="LIFE hair design"></a>
+                        </div>
+                        <div class="work_btn">
+                            <a href="./webwork_life.html"><img class="circle_btn" src="./images/10click-here.png" alt="最新の制作実績へリンクするボタン"></a>
+                        </div>
+                        <div class="sp_gallery_inner">
+                            <div class="sp_work-type">WEB SITE</div>
+                            <p class="sp_work-title">HAIR SALON</p>
+                            <p class="sp_work-client"><span>LIFE hair design</span>[fiction]</p>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="common-btn">
+                    <a class="btn bgleft" href="./web.html"><span>MORE</span></a>
+                </div>
+            </section>
+            <section class="graphic-design">
+                <div class="graphic_title_block">
+                    <h2 class="section_title pc-tab_only">GRAPHIC</h2>
+                    <h2 class="section_title sp_only">GRAPHIC DESIGN</h2>
+                    <div class="graphic-subtitle">
+                        <p>グラフィック</p>
+                        <div class="graphic-border"></div>
+                    </div>
+                </div>
+                <p class="graphic_text_pc">ネットの時代ですが、直接手に取れるチラシは宣伝効果があります。<br>
+                    オープンチラシや商品のチラシ、イベントの告知など用途は様々です。<br>
+                    また、「読ませたい」「魅せたい」ものは、チラシやパンフレットなど冊子をおすすめします。
+                </p>
+                <p class="graphic_text_sp">ネットの時代ですが、直接手に取れるチラシは宣伝効果があります。
+                    オープンチラシや商品のチラシ、イベントの告知など用途は様々です。
+                    また、「読ませたい」「魅せたい」ものは、チラシやパンフレットなど冊子をおすすめします。
+                </p>
+                <div class="slick-nav-arrows">
+                    <div class="slick-prev"></div>
+                    <div class="slick-next"></div>
+                </div>
+                <div class="gallery-slider">
+                    <a href="./works/work_takenoko.html"><img src="./images/11graphic01.jpg" alt="たけのこ整体院リーフレット"></a>
+                    <a href="./works/work_mhouse.html"><img src="./images/12graphic02.jpg" alt="株式会社m.houseチラシ"></a>
+                    <a href="./works/work_sweetsweets.html"><img src="./images/13graphic03.jpg" alt="sweetsweetsブランドブック"></a>
+                    <a href="./works/work_kjex02.html"><img src="./images/14graphic04.jpg" alt="ケイジェックス株式会社チラシ"></a>
+                </div>
+                <div class="common-btn">
+                    <a class="btn bgleft" href="./graphic.html"><span>MORE</span></a>
+                </div>
+            </section>
+            <div class="contact">
+                <div class="contact_text_sp">
+                    <p>オンラインでお打ち合わせも可能です。<br>
+                        無料でご相談・お見積りいたします。</p>
+                </div>
+                <div class="contact_inner">
+                    <div class="contact_block">
+                        <a href="./about.html">
+                            <picture>
+                                <source srcset="./images/sp_watashi_top.jpg" media="(max-width:767px)">
+                                <img class="contact_btn" src="./images/15watashi01.jpg" 
+                                onmouseover="this.src='./images/16watashi02.jpg'" onmouseout="this.src='./images/15watashi01.jpg'" alt="WATASHIリンクボタン">
+                            </picture>
+                        </a>    
+                    </div>
+                    <div class="contact_block">
+                        <a href="./contact.html">
+                            <picture>
+                                <source srcset="./images/sp_contact_top.jpg" media="(max-width:767px)">
+                            <img class="contact_btn" src="./images/17contact01.jpg" 
+                            onmouseover="this.src='./images/18contact02.jpg'" onmouseout="this.src='./images/17contact01.jpg'" alt="CONTACTリンクボタン">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact_text_pc">
+                    <p>オンラインでお打ち合わせも可能です。<br>
+                        無料でご相談・お見積りいたします。</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="pc_footer">
+            <div class="pagetop">
+                <a href="#header">
+                    <img class="pagetop_btn" src="./images/19back-to-top01.png" onmouseover="this.src='./images/20back-to-top02.png'" onmouseout="this.src='./images/19back-to-top01.png'" alt="トップへ戻る">
+                 </a>
+            </div>
+            <div class="footer_inner">
+                <div class="footer_menu_contents">
+                    <div class="footer_logo">
+                        <a href="./index.html">LAFETE DESIGN</a>
+                    </div>
+                    <div class="footer_menu">
+                        <ul class="footer_menu_block">
+                            <li><a href="./web.html">WEB DESIGN</a></li>
+                            <li><a href="./graphic.html">GRAPHIC DESIGN</a></li>
+                            <li><a href="./nekonote.html">NEKOnoTE</a></li>
+                        </ul>
+                        <ul class="footer_menu_block">
+                            <li><a href="./about.html">ABOUT</a></li>
+                            <li><a href="./contact.html">CONTACT</a></li>
+                            <li class="privacy"><a href="./privacy.html">PRIVACY POLICY</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_btn_top-only">
+                    <a class="btn bgleft" href="./about.html"><span class="footer_contact">let's go!</span></a>
+                </div>
+            </div>
+            <p class="copyright">
+                &copy; LAFETE DESIGN
+            </p>
+        </div>
+        <div class="sp_only">  
+            <div class="footer_inner">
+                <div class="footer_menu_contents">
+                    <div class="footer_logo">
+                        <a href="./index.html">LAFETE DESIGN</a>
+                    </div>
+                    <div class="footer_menu">
+                        <ul class="footer_menu_block">
+                            <li><a href="./web.html">WEB DESIGN</a></li>
+                            <li><a href="./graphic.html">GRAPHIC DESIGN</a></li>
+                            <li><a href="./nekonote.html">NEKOnoTE</a></li>
+                        </ul>
+                        <ul class="footer_menu_block">
+                            <li><a href="./about.html">ABOUT</a></li>
+                            <li><a href="./contact.html">CONTACT</a></li>
+                            <li class="privacy"><a href="./privacy.html">PRIVACY POLICY</a></li>
+                        </ul>
+                        <p class="copyright">
+                            &copy; LAFETE DESIGN
+                        </p>
+                    </div>
+                </div>
+                <div class="pagetop">
+                    <a href="#header">
+                        <img class="pagetop_btn" src="./images/sp_back-to-top.png" alt="トップへ戻る">
+                     </a>
+                </div>
+            </div>
+        </div>   
+    </footer>
+    <script>
+        $(function(){
+            //*ハンバーガーメニュー*//
+            $(".hamburger").on('click', function(){
+                $(".sp_nav").fadeToggle();
+                $(".hamburger").toggleClass('open');
+            });
+            //*ギャラリースライダー*//
+            if (window.matchMedia('(max-width:787px)').matches) {
+                $(".gallery-slider").slick({
+                    autoplaySpeed: 2000,
+                    speed: 2000,
+                    autoplay: true,
+                    arrows:false,
+                    prevArrow: $('.slick-prev'),
+                    nextArrow: $('.slick-next'),
+                });
+            }else if (window.matchMedia('(min-width:788px)').matches) {
+                $(".gallery-slider").slick({
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    speed: 2000,
+                    arrows: true,
+                    prevArrow: $('.slick-prev'),
+                    nextArrow: $('.slick-next'),
+                });
+            };
+        });
+
+        //*オープニング1回のみ *//  
+        const webStorage = function () {
+            if (sessionStorage.getItem('visit')) {
+                $("#splash").css("display", "none");
+                $("#container").css("opacity", "1");
+            } else {
+               sessionStorage.setItem('visit', 'true'); 
+               $("#splash").delay(3300).fadeOut(function(){//ローディングエリア（splashエリア）をフェードアウトする記述
+                   $('body').addClass('appear');//フェードアウト後bodyにappearクラス付与
+               });
+            }
+        }
+       webStorage();
+
+        //*スライダー軽く*//
+        lightbox.option({
+            resizeDuration: 10,
+            fadeDuration: 250,
+            showImageNumberLabel: false,
+        });
+        AOS.init();
+    </script>
+</body>
+</html>
+ 

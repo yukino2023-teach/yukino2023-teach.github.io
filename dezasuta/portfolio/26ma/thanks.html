@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYUMI PORTFOLIO</title>
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+<script type="text/javascript">
+    let submitted = false;
+</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+    onload="if(submitted){window.location='./thanks-page.html';}"></iframe>
+
+<body>
+
+    <!-- 雨粒 -->
+    <ul class="drop">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <div class="thanks-page">
+        <h1>
+            お問い合わせ　送信完了
+        </h1>
+        <img src="./images/umbrella@3x.png">
+        <p>
+            お問い合わせありがとうございます。<br>
+            ご記入していただいた情報は無事に送信されました。
+        </p>
+        <div class="pc_button_top-page">
+            <a href="./index.html">
+                TOPに戻る
+            </a>
+        </div>
+
+    </div>
+
+    <form
+        action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSe00eJN0CWayVTtmGW0ONrc6MT8bA5no3F9iHgbGwaOm18KRw/formResponse"
+        method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="c-form"></form>
+
+</body>
+
+
+
+</html>

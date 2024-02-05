@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYUMI PORTFOLIO</title>
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+<!-- ページ内リンク -->
+<a href="#" id="page-top">
+    <img src="./images/to_top@3x.png">
+</a>
+
+<body>
+
+    <!-- 雨粒 -->
+    <ul class="drop">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <header>
+        <nav class="header_nav">
+            <ul>
+                <li>
+                    <a href="./index.html">
+                        HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="./works.html">
+                        WORKS
+                    </a>
+                </li>
+                <li>
+                    <a href="#ABOUT">
+                        ABOUT
+                    </a>
+                </li>
+                <li>
+                    <a href="#CONTACT">
+                        CONTACT
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="hamburger"><span></span></div>
+        <nav class="sp_nav">
+            <ul>
+                <li>
+                    <a href="./index.html">
+                        HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="./works.html">
+                        WORKS
+                    </a>
+                </li>
+                <li>
+                    <a href="#ABOUT">
+                        ABOUT
+                    </a>
+                </li>
+                <li>
+                    <a href="#CONTACT">
+                        CONTACT
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+    <section class="WORKS">
+        <div class="pc_works_list">
+            <img src="./images/works@2x.png" alt="フォントの画像">
+        </div>
+
+
+        <div class="pc_works_wrap">
+
+            <div class="works_04">
+                <a href="./works_04.html">
+                    <img src="./images/works_04_mockup.png" alt="">
+                </a>
+                <p>
+                    架空のコワーキングスペース「WOKERS」<br>
+                    <span>LP design</span>
+                </p>
+            </div>
+
+            <div class="works_02">
+                <a href="./works_02.html">
+                    <img src="./images/works_02_mockup.png" alt="">
+                </a>
+                <p>旅行メディアのアプリ版広告<br>
+                    <span>banner design</span>
+                </p>
+            </div>
+
+            <div class="works_06">
+                <a href="./works_06.html">
+                    <img src="./images/works_06_mockup.png" alt="">
+                </a>
+                <p>
+                    デザインカフェ　ホームページ<br>
+                    <span>coding</span>
+                </p>
+            </div>
+
+            <div class="works_01">
+                <a href="./works_01.html">
+                    <img src="./images/works_01_mockup.png" alt="">
+                </a>
+                <p>
+                    デザスタmobile<br>学割プランバナーデザイン<br>
+                    <span>banner design</span>
+                </p>
+            </div>
+
+            <div class="works_05">
+                <a href="./works_05.html">
+                    <img src="./images/works_05_mockup.png" alt="">
+                </a>
+                <p>
+                    架空のヘアサロン<br>「LIFE hair design」<br>
+                    <span>LP design</span>
+                </p>
+            </div>
+
+            <div class="works_03">
+                <a href="./works_03.html">
+                    <img src="./images/works_03_mockup.png" alt="">
+                </a>
+                <p>
+                    架空のハンバーガー店<br>新メニュー「激旨バーガー」<br><span>banner design</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="pc_button_top-page">
+            <a href="./index.html">
+                トップページに戻る
+            </a>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="WORKS_FOOTER">
+
+            <div class="footer_box">
+                <ul>
+                    <li>
+                        <a href="./index.html">
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./works.html">
+                            WORKS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#ABOUT">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#CONTACT">
+                            CONTACT
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright">
+                    ©AYUMI.M 2023
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <script>
+
+        $(function () {
+            // ハンバーガーメニュー
+            $(function () {
+                $('.hamburger').on('click', function () {
+                    $('.sp_nav').fadeToggle();
+                    $('.hamburger').toggleClass('open');
+                });
+                $(".sp_nav").click(function () {
+                    $('.sp_nav').fadeToggle();
+                    $("hamburger").removeClass("open");
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>

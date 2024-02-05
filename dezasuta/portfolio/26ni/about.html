@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/move.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="header-nav">
+
+            <div class="humburger"><span></span></div>
+        </nav>
+    </header>
+
+    <section id="About">
+        <h2 class="category">
+            About
+        </h2>
+
+        <div class="about-contents">
+            <p class="about-text">
+                誰かの心にふわっと残るようなデザインを目指したい<br>
+                デザインやコーディング一つ一つに意図を込めて<br>
+                お客様が見つけられない課題を解決できるような提案をいたします
+            </p>
+
+            <div class="about-contents-inner">
+                <div class="about-design">
+                    <img src="./img/Photoshop@2x.png" alt="Photoshop" class="about-design-img">
+                    <img src="./img/illustrator@2x.png" alt="illustrator" class="about-design-img">
+                    <p class="about-design-text">
+                        [ デザイン ]<br>
+                        バナーやLP、ホームページのデザインを行います。あなたの課題を解決するために見る人の心に残るデザインをします。<br>
+                        使用ソフト　Photoshop/illustrator
+                    </p>
+                </div>
+                <div class="about-coding">
+                    <img src="./img/coding@2x.png" alt="coding" class="about-design-coding">
+                    <p class="about-coding-text">
+                        [ コーディング ]<br>
+                        デザインを基にサイト作成を行います。デザインに忠実に、メンテナンスのしやすいコーディングを心がけています。<br>
+                        使用言語　HTML/CSS/JavaScript
+                    </p>
+                </div>
+            </div>
+            <div class="about-img">
+                <picture>
+                    <source srcset="./img/aboutsp.png" media="(max-width: 767px)">
+                    <img src="./img/aboutpc.png" alt="spring" class="about-img-inner">
+                </picture>
+            </div>
+            <p class="about-me">沼山いずみ<span class="about-me-ro">Izumi Numayama</span></p>
+            <p class="about-me-text">
+                福島県生まれ。中学時代に始めたイラスト制作からデザインに興味を持つ。大学では心理学を専攻し、その後事務職として建設系の会社に就く。趣味で続けていたイラストや手芸からWEBデザインにも興味を持ち、WEBサイトの制作を始める。<br><br>
+                趣味は読書・写真撮影・イラスト・手芸・ギター・ゲーム実況
+            </p>
+        </div>
+    </section>
+
+    <section id="Contact">
+        <h2 class="category">
+            Contact
+        </h2>
+        <div class="contact-contents">
+            <p class="contact-text">
+                お問い合わせを検討いただきありがとうございます！気になることがあれば何でもお寄せください。できるかぎり丁寧に答えします。
+            </p>
+            <form class="contact-form">
+                <div class="contact-col">
+                    <label for="contact-category" class="form-label">お問い合わせ内容</label>
+                </div>
+                <div class="contact-item">
+                    <select name="contact-category">
+                        <option value="mitumori">選択してください</option>
+                        <option value="mitumori">見積を依頼したい</option>
+                        <option value="zatudan">雑談したい</option>
+                    </select>
+                </div>
+                <div class="contact-col">
+                    <label for="name" class="form-label">名前</label>
+                </div>
+                <div class="contact-item">
+                    <input id="name" type="text" name="yourname" placeholder="山田　花子">
+                </div>
+                <div class="contact-col">
+                    <label for="mail" class="form-label">メールアドレス</label>
+                </div>
+                <div class="contact-item">
+                    <input id="mail" type="text" name="yourmail" placeholder="aaaaaaaaa@gmail.com">
+                </div>
+                <div class="contact-col">
+                    <label for="message" class="form-label">本文</label>
+                </div>
+                <div class="contact-item-last">
+                    <textarea id="message" name="message" placeholder="お気軽にご質問をご記入ください。"></textarea>
+                </div>
+                <div class="contact-btn">
+                    <a href="" class="btn-inquiry">お問い合わせをする<span class="arrow-right"></span></a>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <footer class="copyright">
+        &copy;︎memorable design
+    </footer>
+</body>
+
+</html>

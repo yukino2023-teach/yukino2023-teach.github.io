@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB DESIGN | LAFETE DESIGN</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap" rel="stylesheet">
+    <!-- aos.cssを読み込む -->
+    <link rel="stylesheet" href="./css/aos.css">
+    <!--lightbox-->
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+    <link rel="stylesheet" href="./css/style.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <!-- jQuery first -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- paginathing.min.js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/alfrcr/paginathing/dist/paginathing.min.js"></script>
+    <!-- aos. jsファイルを読み込む -->
+    <script src="./js/aos.js"></script>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header id="header">
+        <div class="header_container">
+           <h1 class="logo">
+               <a href="./index.html"><img src="./images/logo.png" alt="LAFETE DESIGN"></a>
+           </h1>
+           <nav class="header_nav">
+               <ul>
+                   <li>
+                       <a href="./web.html">WEB DESIGN</a>
+                   </li>
+                   <li>
+                       <a href="./graphic.html">GRAPHIC DESIGN</a>
+                   </li>
+                   <li>
+                       <a href="./nekonote.html">NEKOnoTE</a>
+                   </li>
+               </ul>
+            </nav>
+            <nav class="header_contact">
+               <ul>
+                   <li>
+                       <a href="./about.html">ABOUT</a>
+                   </li>
+                   <li>
+                       <div class="gnv-border"></div>
+                   </li>
+                   <li>
+                       <a href="./contact.html">CONTACT</a>
+                   </li>
+               </ul>
+           </nav>
+        </div>
+        <div class="hamburger"><span></span></div>
+        <nav class="sp_nav">
+            <ul>
+                <li>
+                    <a href="./web.html">WEB DESIGN</a>
+                </li>
+                <li>
+                    <a href="./graphic.html">GRAPHIC DESIGN</a>
+                </li>
+                <li>
+                    <a href="./nekonote.html">NEKOnoTE</a>
+                </li>
+            </ul>
+            <ul class="sp_nav_contact">
+                <li>
+                    <a href="./about.html">ABOUT</a>
+                </li>
+                <li>
+                    <div class="gnv-border"></div>
+                </li>
+                <li>
+                    <a href="./contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content-wrap">
+        <aside class="pc_modal">
+            <a class="menu_btn" href="./web.html">WORK</a>
+            <a class="menu_btn" href="#modal_price" data-target="modalArea01">PRICE</a>
+            <a class="menu_btn" href="#modal_flow" data-target="modalArea02">FLOW</a>
+            <a class="menu_btn" href="#modal_nekonote" data-target="modalArea03">NEKOnoTE</a>
+        </aside>
+        <aside class="sp_modal">
+            <div class="sp_modal_inner">
+                <a class="menu_btn" href="./web.html">WORK</a>
+                <a class="menu_btn" href="#modal_price" data-target="modalArea01">PRICE</a>
+                <a class="menu_btn" href="#modal_flow" data-target="modalArea02">FLOW</a>
+                <a class="menu_btn" href="#modal_nekonote" data-target="modalArea03">NEKOnoTE</a>
+            </div>
+        </aside>
+        <main>
+            <h2 class="section_title">WEB DESIGN</h2>
+            <p class="title_text">最近では、多くのお客様がサービスご利用前に会社名を検索します。<br>
+                その際に何もサイトが出てこないと不安になり、最初の貴重なアクションを逃す確率が高まります。<br>
+                集客と信頼のために、ホームページは必須な時代です。
+            </p>
+            <p class="title_text_sp">最近では、多くのお客様がサービスご利用前に会社名を検索します。
+                その際に何もサイトが出てこないと不安になり、最初の貴重なアクションを逃す確率が高まります。
+                集客と信頼のために、ホームページは必須な時代です。
+            </p>
+            <div class="title_block">
+                <h2 class="section_title">WORK</h2>
+                <div class="subtitle">
+                    <p>制作実績</p>
+                    <div class="work-border"></div>
+                </div>
+            </div>
+            <div class="work_list">
+                <div class="work_menu"> <!-- 1段目 -->
+                    <!-- pc版 -->
+                    <div class="web_gallery">
+                        <div class="work-type">WEB SITE</div>
+                        <a class="work_link" href="./works/work_life.html"><img src="./images/web/life.jpg" alt="LIFE hair design"></a>
+                        <p class="work-title">HAIR SALON</p>
+                        <p class="work-client"><span>LIFE hair design</span>[fiction]</p>
+                    </div>
+                    <!-- sp版 -->
+                    <div class="sp_gallery">
+                        <div class="sp_gallery_img">
+                            <a class="sp_work_link" href="./works/work_life.html"><img src="./images/web/life.jpg" alt="LIFE hair design"></a>
+                        </div>
+                        <div class="sp_gallery_inner">
+                            <div class="sp_work-type">WEB SITE</div>
+                            <p class="sp_work-title">HAIR SALON</p>
+                            <p class="sp_work-client"><span>LIFE hair design</span>[fiction]</p>
+                        </div>
+                    </div>
+                    <!-- pc版 -->
+                    <div class="web_gallery">
+                        <div class="work-type">LP</div>
+                        <a class="work_link" href="./works/work_workers.html"><img src="./images/web/workers.jpg" alt="WORKERS"></a>
+                        <p class="work-title">WORKING SPACE</p>
+                        <p class="work-client"><span>WORKERS</span>[fiction]</p>
+                    </div>
+                     <!-- sp版 -->
+                    <div class="sp_gallery">
+                        <div class="sp_gallery_img">
+                            <a class="sp_work_link" href="./works/work_workers.html"><img src="./images/web/workers.jpg" alt="WORKERS"></a>
+                        </div>
+                        <div class="sp_gallery_inner">
+                            <div class="sp_work-type">LP</div>
+                            <p class="sp_work-title">WORKING SPACE</p>
+                            <p class="sp_work-client"><span>WORKERS</span>[fiction]</p>
+                        </div>
+                    </div>
+                    <!-- pc版 -->
+                    <div class="web_gallery">
+                        <div class="work-type">WEB SITE</div>
+                        <a class="work_link" href="./works/work_kjex.html"><img src="./images/web/kjex.jpg" alt="ケイジェックス株式会社"></a>
+                        <p class="work-title">CORPORATE</p>
+                        <p class="work-client"><span>ケイジェックス株式会社</span></p>
+                    </div>
+                    <!-- sp版 -->
+                    <div class="sp_gallery">
+                        <div class="sp_gallery_img">
+                            <a class="sp_work_link" href="./works/work_kjex.html"><img src="./images/web/kjex.jpg" alt="ケイジェックス株式会社"></a>
+                        </div>
+                        <div class="sp_gallery_inner">
+                            <div class="sp_work-type">WEB SITE</div>
+                            <p class="sp_work-title">CORPORATE</p>
+                            <p class="sp_work-client"><span>ケイジェックス株式会社</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work_menu"> <!-- ２段目 -->
+                    <!-- pc版 -->
+                    <div class="web_gallery">
+                        <div class="work-type">BANNER</div>
+                        <a class="work_link" href="./works/work_dxburger.html"><img src="./images/web/dxburger.jpg" alt="デラックスバーガー"></a>
+                        <p class="work-title">FAST FOOD</p>
+                        <p class="work-client"><span>デラックスバーガー</span>[fiction]</p>
+                    </div>
+                    <!-- sp版 -->
+                    <div class="sp_gallery">
+                        <div class="sp_gallery_img">
+                            <a class="sp_work_link" href="./works/work_dxburger.html"><img src="./images/web/dxburger.jpg" alt="デラックスバーガー"></a>
+                        </div>
+                        <div class="sp_gallery_inner">
+                            <div class="sp_work-type">BANNER</div>
+                            <p class="sp_work-title">FAST FOOD</p>
+                            <p class="sp_work-client"><span>デラックスバーガー</span>[fiction]</p>
+                        </div>
+                    </div>
+                    <!-- pc版 -->
+                    <div class="web_gallery">
+                        <div class="work-type">BANNER</div>
+                        <a class="work_link" href="./works/work_trrrrip.html"><img src="./images/web/trrrrip.jpg" alt="TRRRRIP"></a>
+                        <p class="work-title">TRAVEL MEDIA</p>
+                        <p class="work-client"><span>TRRRRIP</span>[fiction]</p>
+                    </div>
+                    <!-- sp版 -->
+                    <div class="sp_gallery">
+                        <div class="sp_gallery_img">
+                            <a class="sp_work_link" href="./works/work_trrrrip.html"><img src="./images/web/trrrrip.jpg" alt="TRRRRIP"></a>
+                        </div>
+                        <div class="sp_gallery_inner">
+                            <div class="sp_work-type">BANNER</div>
+                            <p class="sp_work-title">TRAVEL MEDIA</p>
+                            <p class="sp_work-client"><span>TRRRRIP</span>[fiction]</p>
+                        </div>
+                    </div>
+                    <!-- pc版 -->
+                    <div class="web_gallery">
+                        <div class="work-type">BANNER</div>
+                        <a class="work_link" href="./works/work_dezasuta.html"><img src="./images/web/dezasutamobile.jpg" alt="デザスタmobile"></a>
+                        <p class="work-title">MOBILE SHOP</p>
+                        <p class="work-client"><span>dezasutamobile</span>[fiction]</p>
+                    </div>
+                    <!-- sp版 -->
+                    <div class="sp_gallery">
+                        <div class="sp_gallery_img">
+                            <a class="sp_work_link" href="./works/work_dezasuta.html"><img src="./images/web/dezasutamobile.jpg" alt="デザスタmobile"></a>
+                        </div>
+                        <div class="sp_gallery_inner">
+                            <div class="sp_work-type">BANNER</div>
+                            <p class="sp_work-title">MOBILE SHOP</p>
+                            <p class="sp_work-client"><span>dezasutamobile</span>[fiction]</p>
+                        </div>
+                    </div>                
+                </div>
+                <div class="work_menu"> <!-- ３段目 -->
+                    <!-- pc版 -->
+                    <div class="web_gallery">
+                        <div class="work-type">WEB SITE</div>
+                        <a class="work_link" href="./works/work_designcafe.html"><img src="./images/web/designcafe.jpg" alt="デザインカフェ"></a>
+                        <p class="work-title">CAFE</p>
+                        <p class="work-client"><span>DESIGN CAFE</span>[fiction]</p> 
+                    </div>
+                    <!-- sp版 -->
+                    <div class="sp_gallery">
+                        <div class="sp_gallery_img">
+                            <a class="sp_work_link" href="./works/work_designcafe.html"><img src="./images/web/designcafe.jpg" alt="デザインカフェ"></a>
+                        </div>
+                        <div class="sp_gallery_inner">
+                            <div class="sp_work-type">WEB SITE</div>
+                            <p class="sp_work-title">CAFE</p>
+                            <p class="sp_work-client"><span>DESIGN CAFE</span>[fiction]</p>
+                        </div>
+                    </div>
+                    <!-- pc版 -->
+                    <div class="web_gallery">
+                        <div class="work-type">BANNER</div>
+                        <a class="work_link" href="./works/work_midoripiano.html"><img src="./images/web/midoripiano.jpg" alt="みどり岸町ピアノ教室"></a>
+                        <p class="work-title">PIANO ROOM</p>
+                        <p class="work-client"><span>みどり岸町ピアノ教室</span></p>
+                    </div>
+                     <!-- sp版 -->
+                    <div class="sp_gallery">
+                        <div class="sp_gallery_img">
+                            <a class="sp_work_link" href="./works/work_midoripiano.html"><img src="./images/web/midoripiano.jpg" alt="みどり岸町ピアノ教室"></a>
+                        </div>
+                        <div class="sp_gallery_inner">
+                            <div class="sp_work-type">BANNER</div>
+                            <p class="sp_work-title">PIANO ROOM</p>
+                            <p class="sp_work-client"><span>みどり岸町ピアノ教室</span></p>
+                        </div>
+                    </div>
+                    <!-- pc版 -->
+                    <div class="web_gallery">
+                        <div class="work-type">WEB SITE</div>
+                        <a class="work_link" href="./works/work_ginrei.html"><img src="./images/web/ginrei.jpg" alt="ぎんれい"></a>
+                        <p class="work-title">SELECT SHOP</p>
+                        <p class="work-client"><span>Ginrei ぎんれい</span></p>
+                    </div>
+                    <!-- sp版 -->
+                    <div class="sp_gallery">
+                        <div class="sp_gallery_img">
+                            <a class="sp_work_link" href="./works/work_ginrei.html"><img src="./images/web/ginrei.jpg" alt="ぎんれい"></a>
+                        </div>
+                        <div class="sp_gallery_inner">
+                            <div class="sp_work-type">WEB SITE</div>
+                            <p class="sp_work-title">SELECT SHOP</p>
+                            <p class="sp_work-client"><span>Ginrei ぎんれい</span></p>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </main>
+    </section>
+
+
+    <!-- モーダルエリア -->
+    <section id="modalArea01" class="modalArea">
+        <div class="modalBg closeModal"></div>
+        <div class="modalWrapper">
+            <div class="modal-scroll">
+                <div class="title_block">
+                    <h2 class="section_title">PRICE</h2>
+                    <div class="subtitle">
+                        <p>制作料金</p>
+                        <div class="work-border"></div>
+                    </div>
+                </div>
+                <p class="modal_text_pc">
+                    ヒアリングに基づき、ホームページの構成とデザインをご提案し、その上で金額をご提示させていただきます。<br>制作途中でお見積りから金額が変更となる場合は、お打ち合わせの上決定してまいります。
+                </p>
+                <p class="modal_text_sp">
+                    ヒアリングに基づき、ホームページの構成とデザインをご提案し、その上で金額をご提示させていただきます。制作途中でお見積りから金額が変更となる場合は、お打ち合わせの上決定してまいります。
+                 </p>
+                <div class="price_contents">
+                    <div class="price_title">
+                        <h3>ホームページ制作</h3>
+                        <p>料金の目安(コーポレートサイトの場合[5ページ])</p>
+                    </div>
+                    <div class="price_group">
+                        <div class="price_list">
+                            <div class="price_menu">
+                                <h4>WordPressテンプレート使用</h4>
+                                <div class="price_box">
+                                    <div class="price_item">
+                                        <h5>ご提案</h5>
+                                        <ul>
+                                            <li>デザイン提案</li>
+                                            <li>構成提案</li>
+                                        </ul>
+                                    </div>
+                                    <div class="price_item">
+                                        <h5>内容</h5>
+                                        <ul>
+                                            <li>5ページ</li>
+                                            <li>納期1~2ヶ月</li>
+                                        </ul>
+                                    </div>
+                                    <div class="price_item">
+                                        <h5>担当</h5>
+                                        <ul>
+                                            <li>ディレクション</li>
+                                            <li>デザイン</li>
+                                            <li>WordPress構築</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>180,000円</span>(税別)
+                            </div>
+                        </div>
+                        <div class="price_border"></div>
+                        <div class="price_list">
+                            <div class="price_menu">
+                                <h4>オリジナルデザイン</h4>
+                                <div class="price_box">
+                                    <div class="price_item">
+                                        <h5>ご提案</h5>
+                                        <ul>
+                                            <li>デザイン提案</li>
+                                            <li>構成提案</li>
+                                        </ul>
+                                    </div>
+                                    <div class="price_item">
+                                        <h5>内容</h5>
+                                        <ul>
+                                            <li>5ページ</li>
+                                            <li>WordPress化</li>
+                                            <li>納期2~3ヶ月</li>
+                                        </ul>
+                                    </div>
+                                    <div class="price_item">
+                                        <h5>担当</h5>
+                                        <ul>
+                                            <li>ディレクション</li>
+                                            <li>デザイン</li>
+                                            <li>コーディング</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>300,000円</span>(税別)
+                            </div>
+                        </div>
+                    </div>
+                    <p class="price_group_text">上記は目安です。素材の有無や制作の内容により、料金の増減がございます。</p>
+                </div>
+            </div>
+            <div class="CloseModal closeModal">
+                ×
+            </div>
+        </div>
+    </section>
+    
+    <section id="modalArea02" class="modalArea">
+        <div class="modalBg closeModal"></div>
+        <div class="modalWrapper">
+            <div class="modal-scroll">
+                <div class="title_block">
+                    <h2 class="section_title">FLOW</h2>
+                    <div class="subtitle">
+                        <p>制作の流れ</p>
+                        <div class="work-border"></div>
+                    </div>
+                </div>
+                <p class="modal_text_pc">
+                    ヒアリングに基づき、ホームページの構成とデザインをご提案いたします。<br>修正回数に制限はなく、認識をすり合わせながら公開まで進めてまいります。
+                 </p>
+                 <p class="modal_text_sp">
+                    ヒアリングに基づき、ホームページの構成とデザインをご提案いたします。修正回数に制限はなく、認識をすり合わせながら公開まで進めてまいります。
+                  </p>
+                <div class="flow_img">
+                    <picture>
+                        <source srcset="./images/web/flow_sp.jpg" media="(max-width:600px)">
+                        <img src="./images/web/flow.png" alt="制作の流れ">
+                    </picture>
+                </div>
+            </div>
+            <div class="CloseModal closeModal">
+                ×
+            </div>
+        </div>
+    </section>
+    
+    <section id="modalArea03" class="modalArea">
+        <div class="modalBg closeModal"></div>
+        <div class="modalWrapper">
+            <div class="modal-scroll">
+                <div class="title_block">
+                    <h2 class="section_title">NEKOnoTE</h2>
+                    <div class="subtitle">
+                        <p>DESIGN × 事務</p>
+                        <div class="work-border"></div>
+                    </div>
+                </div>
+                <div class="modal_textarea">
+                    <p class="modal_text">
+                        「ねこの手もかりたい」そんなときにご利用いただけるよう、デザインに＋αのサービスをご提供しています。<br>
+                         事務職歴15年が、デザインだけでなくあなたの事業をサポートいたします。<br>
+                         わたしがサポートをすることで、事業に集中でき、あなたの先のお客様へ、あなたの＋αが届くことを願っています。
+                     </p>
+                </div>                
+                <div class="modal_support">
+                    <div class="modal_supportarea">
+                        <div class="support_inner">
+                            <div class="support_item">
+                                <p>ホームページ制作</p>
+                            </div>
+                            <div class="service_center"><img src="./images/03X.png" alt=""></div>
+                            <div class="support_item">
+                                <p>新着情報の更新</p>
+                            </div>
+                        </div>
+                        <div class="modal_textarea">
+                            <p class="modal_text">
+                                ホームページは作って終わりではありません。日々の更新が大切です。<br>
+                                ホームページを見に来られたお客様に最新の情報や日々の活動をお知らせしましょう。<br>
+                                この更新のお手続きをLAFETE DESIGNでご対応で可能です。<br>
+                                あなたは事業に集中し、ホームページは「ねこの手」をかりてみませんか。</p>
+                        </div>     
+                    </div>
+                    <div class="modal_supportarea">
+                        
+                        <div class="support_inner">
+                            <div class="support_item">
+                                <p>ホームページ制作</p>
+                            </div>
+                            <div class="service_center"><img src="./images/03X.png" alt=""></div>
+                            <div class="support_item">
+                                <p><span>ー パワーポイント納品 ー</span><br>会社資料の作成</p>
+                            </div>
+                        </div>
+                        <div class="modal_textarea">
+                            <p class="modal_text">
+                                起業しホームページが出来上がったら、会社のことを知ってもらう資料が欲しいところです。<br>
+                                ホームページのテイストや、こだわりに合わせた会社資料をお作りいたします。<br>
+                                ホームページの制作段階で事業内容のヒアリングはできているので、いちからお打ち合わせも必要ありません。資料作成は「ねこの手」をかりて、お時間を有効活用しましょう。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="CloseModal closeModal">
+                ×
+            </div>
+        </div>
+    </section>
+          <!-- モーダルエリアここまで -->
+    <div class="sp_only">
+        <div class="contact_block">
+            <a href="./contact.html">
+                <img class="contact_btn" src="./images/sp_contact.jpg"  alt="contactボタン">
+            </a>
+        </div>
+    </div>    
+    <footer>
+        <div class="pc_footer">
+            <div class="pagetop">
+                <a href="#header">
+                    <img class="pagetop_btn" src="./images/19back-to-top01.png" onmouseover="this.src='./images/20back-to-top02.png'" onmouseout="this.src='./images/19back-to-top01.png'" alt="トップへ戻る">
+                 </a>
+            </div>
+            <div class="footer_inner">
+                <div class="footer_menu_contents">
+                    <div class="footer_logo">
+                        <a href="./index.html">LAFETE DESIGN</a>
+                    </div>
+                    <div class="footer_menu">
+                        <ul class="footer_menu_block">
+                            <li><a href="./web.html">WEB DESIGN</a></li>
+                            <li><a href="./graphic.html">GRAPHIC DESIGN</a></li>
+                            <li><a href="./nekonote.html">NEKOnoTE</a></li>
+                        </ul>
+                        <ul class="footer_menu_block">
+                            <li><a href="./about.html">ABOUT</a></li>
+                            <li><a href="./contact.html">CONTACT</a></li>
+                            <li class="privacy"><a href="./privacy.html">PRIVACY POLICY</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_btn">
+                    <p class="footer_btn_text">オンラインでお打ち合わせも可能です。<br>無料でご相談・お見積りいたします。</p>
+                    <a class="btn bgleft" href="./contact.html"><p class="btn_text">design for you</p><span class="contact">CONTACT</span></a>
+                </div>
+            </div>
+            <p class="copyright">
+                &copy; LAFETE DESIGN
+            </p>
+        </div>
+        <div class="sp_only">  
+            <div class="footer_inner">
+                <div class="footer_menu_contents">
+                    <div class="footer_logo">
+                        <a href="./index.html">LAFETE DESIGN</a>
+                    </div>
+                    <div class="footer_menu">
+                        <ul class="footer_menu_block">
+                            <li><a href="./web.html">WEB DESIGN</a></li>
+                            <li><a href="./graphic.html">GRAPHIC DESIGN</a></li>
+                            <li><a href="./nekonote.html">NEKOnoTE</a></li>
+                        </ul>
+                        <ul class="footer_menu_block">
+                            <li><a href="./about.html">ABOUT</a></li>
+                            <li><a href="./contact.html">CONTACT</a></li>
+                            <li class="privacy"><a href="./privacy.html">PRIVACY POLICY</a></li>
+                        </ul>
+                        <p class="copyright">
+                            &copy; LAFETE DESIGN
+                        </p>
+                    </div>
+                </div>
+                <div class="pagetop">
+                    <a href="#header">
+                        <img class="pagetop_btn" src="./images/sp_back-to-top.png" alt="トップへ戻る">
+                     </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">   
+         /*ページネーション*/
+        jQuery(document).ready(function($){
+            $('.work_list').paginathing({
+                perPage: 3,
+                firstLast: false,
+                prevText:'PREV' ,
+                nextText:'NEXT' ,
+                activeClass: 'active',
+            })
+        });
+         /*モーダル*/
+        $(function(){
+            var modal_open = $('.menu_btn');
+            var modal_close = $('.closeModal, .CloseModal');
+        
+            modal_open.on('click', function(){
+              var target = $(this).data('target');
+              var modal = document .getElementById(target);
+              $(modal).fadeIn();
+           });
+            modal_close.on('click', function(){
+              $('.modalArea').fadeOut();
+           });
+        });
+         /*モーダルの位置*/
+        if (window.matchMedia('(max-width:900px)').matches) {
+            $(function() {
+            var lastScrollTop = 0; //前回のスクロール位置を記録する変数
+            $(window).on("scroll", function() {
+                var currentScroll = $(this).scrollTop(); //現在のスクロール位置
+                if (currentScroll > 100){
+                    $(".sp_modal").fadeIn(300);
+                }else{
+                    $(".sp_modal").fadeOut(300);
+                }
+                const scrollHeight = $(document).height(); //ページ全体の高さ
+                const scrollPosition = $(window).height() + currentScroll; //スクロールされた距離
+                const footHeight = $("footer").height(); //フッターの高さ
+                if(scrollHeight - scrollPosition <= footHeight) {
+                    $(".sp_modal").css({
+                        "position":"absolute",
+                        "bottom": 0
+                    });
+                }  else {
+                    $(".sp_modal").css({
+                        "position": "fixed",
+                        "bottom": 0 //上にスクロールするときの位置を固定
+                    });
+                }
+                lastScrollTop = currentScroll; //現在のスクロール位置を記録
+            });
+         });
+        }
+        /*ハンバーガーメニュー*/
+        $(".hamburger").on('click', function(){
+            $(".sp_nav").fadeToggle();
+            $(".hamburger").toggleClass('open');
+        });
+        AOS.init();
+    </script>
+</body>
+</html>
