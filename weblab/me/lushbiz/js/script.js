@@ -1,11 +1,20 @@
+//AOS読み込み
 AOS.init();
+
+//ハンバーガーメニュー
 $(function () {
   $("hamburger").on("click", function () {
     $(".sp-nav").fadeToggle();
     $("hamburger").toggleClass("open");
   });
 });
+// スマホハンバーガーメニュー ナビゲーションクリックでも消える
+$(".hamburger").click(function () {
+  $(".sp-nav").fadeToggle();
+  $(".hamburger").toggleClass("open");
+});
 
+//フェードイン
 $(function () {
   $(window).scroll(function () {
     $(".fadein").each(function () {
@@ -71,12 +80,7 @@ $pageTop.on("click", function () {
   return false;
 });
 
-// スマホハンバーガーメニュー ナビゲーションクリックでも消える
-$(".hamburger").click(function () {
-  $(".sp-nav").fadeToggle();
-  $(".hamburger").toggleClass("open");
-});
-
+// スライダー
 $(function () {
   $(".slider").slick({
     autoplay: true,
