@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/* common */
+/* ========================== */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.8rem;
+  line-height: 1;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* parts */
+/* ========================== */
+
+@media screen and (max-width: 768px) {
+  .btn button {
+    font-size: 1.6rem;
+  }
+}
+
+/* heading */
+/* ========================== */
+
+@media screen and (max-width: 768px) {
+}
+
+/* contents */
+/* ========================== */
+/*モーダルを開くボタン*/
+.modal-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  margin: 30px auto;
+  background: #000000;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.active .modal-close {
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  z-index: 9999;
+  cursor: pointer;
+}
+.active .modal-close::before {
+  position: absolute;
+  transform: rotate(45deg);
+  width: 30px;
+  height: 2px;
+  background-color: #393939;
+  content: "";
+}
+.active .modal-close::after {
+  position: absolute;
+  transform: rotate(-45deg);
+  width: 30px;
+  height: 2px;
+  background-color: #393939;
+  content: "";
+}
+/*モーダル本体の指定 + モーダル外側の背景の指定*/
+.modal-container {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  top: 50%;
+  left: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 50%;
+  padding: 40px 20px;
+  overflow: auto;
+  box-sizing: border-box;
+  background: #aad3d7;
+  text-align: center;
+  transition: .3s;
+}
+/*モーダル本体に「active」クラス付与した時のスタイル*/
+.modal-container.active {
+  visibility: visible;
+  opacity: 1;
+}
+/*モーダル枠の指定*/
+.modal-body {
+  display: inline-block;
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  vertical-align: middle;
+}
+/*モーダル内のコンテンツの指定*/
+.modal-content {
+  padding: 30px;
+  background: #ffffff;
+  text-align: left;
+}
+
+.modal__image {
+  width: 80%;
+  margin: 40px auto;
+}

@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/* common */
+/* ========================== */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.8rem;
+  line-height: 1;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
+    "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* parts */
+/* ========================== */
+
+@media screen and (max-width: 768px) {
+  .btn button {
+    font-size: 1.6rem;
+  }
+}
+
+/* heading */
+/* ========================== */
+
+@media screen and (max-width: 768px) {
+}
+
+/* contents */
+/* ========================== */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.accordion__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion__item {
+  padding: 10px 0;
+}
+
+.accordion__item-q {
+  position: relative;
+  margin: 0;
+  padding: 20px 40px 20px 10px; /* アイコンのためのスペースを確保 */
+  background-color: #e3f6f8;
+  cursor: pointer;
+}
+
+.accordion__item-a {
+  display: none;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  transition: opacity 0.3s ease;
+}
+
+.accordion__item-a.visible {
+  display: block;
+  opacity: 0; /* 初期状態は透明 */
+  -webkit-animation: fade-in 0.3s forwards;
+  animation: fade-in 0.3s forwards; /* ふわっと表示 */
+}
+
+.accordion__item-q::after {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 2px;
+  background-color: #2c6250;
+  content: "";
+  transition: 0.3s;
+}
+.accordion__item-q::before {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  right: 24px;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 30px;
+  background-color: #2c6250;
+  content: "";
+  transition: 0.3s;
+}
+
+.accordion__item-q.open::after {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 2px;
+  background-color: #2c6250;
+  content: "";
+}
+.accordion__item-q.open::before {
+  display: none;
+}
+
+@-webkit-keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
