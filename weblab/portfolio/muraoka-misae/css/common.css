@@ -1,0 +1,451 @@
+@charset "utf-8";
+
+/* ================================
+全ページ基本のスタイル
+===================================*/
+
+body {
+  font-family: "Lora", "Noto Sans JP", serif, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.7;
+}
+img {
+  max-width: 100%;
+}
+p {
+  font-family: "Noto Sans Jp";
+  letter-spacing: 0.15em;
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* ================================
+全ページ共通のスタイル
+===================================*/
+/* ローディング画面のためのCSS*/
+body.appear .splash {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #8190c3;
+  text-align: center;
+  color: #fff;
+}
+.splash-logo {
+  font-size: 20px;
+  letter-spacing: 0.6em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*  ローディング画面のアニメーション */
+.splashbg {
+  display: block;
+  animation-name: PageAnime;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  content: "";
+  position: fixed;
+  z-index: 999;
+  width: 20%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transform: translateX(-500%) skewX(-45deg);
+  background: rgb(129, 144, 195);
+  background: linear-gradient(
+    104deg,
+    rgba(129, 144, 195, 1) 38%,
+    rgba(255, 255, 255, 1) 72%,
+    rgba(129, 144, 195, 1) 100%
+  );
+}
+@keyframes PageAnime {
+  0% {
+    transform-origin: left;
+    transform: translateX(-500%) skewX(-45deg);
+  }
+  100% {
+    transform-origin: left;
+    transform: translateX(1000%) skewX(-45deg);
+  }
+}
+
+@media (max-width: 767px) {
+  @keyframes PageAnime {
+    0% {
+      transform-origin: left;
+      transform: translateX(-1500%) skewX(-45deg);
+    }
+    100% {
+      transform-origin: left;
+      transform: translateX(1100%) skewX(-45deg);
+    }
+  }
+}
+/*画面遷移の後現れるコンテンツ設定*/
+main {
+  opacity: 0;
+}
+body.appear main {
+  animation-name: PageAnimeAppear;
+  animation-duration: 1s;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes PageAnimeAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.next-bridge {
+  display: block;
+  width: 54px;
+  margin: 0 auto;
+}
+.section__title {
+  font-size: 42px;
+  color: #edeacd;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin: 30px 0 70px;
+}
+
+@media (max-width: 767px) {
+  .next-bridge {
+    width: 48px;
+  }
+  .section__title {
+    font-size: 36px;
+    margin: 24px 0 48px;
+  }
+}
+
+/* ================================
+全ページ・星空
+===================================*/
+
+/* 星空の背景のスタイル */
+html,
+body {
+  height: 100%;
+}
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #020d31; /*星空の背景色*/
+  z-index: -1;
+}
+
+/* ================================
+全ページ・header
+===================================*/
+.header__wrapper {
+  height: 100px;
+}
+/* ハンバーガーメニュー ボタン */
+.ham-btn {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 999;
+}
+
+/* メニュー閉じている時の3本線 */
+.ham-btn .bar {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 40%,
+    rgba(192, 195, 204, 1) 78%,
+    rgba(0, 13, 50, 1) 100%
+  );
+  display: inline-block;
+  transition: all 0.5s;
+  position: absolute;
+  height: 2px;
+  right: 0;
+}
+/* Skills-sectionのみボタン色変更 */
+.ham-btn.change-color .bar {
+  background: linear-gradient(
+    90deg,
+    rgba(76, 113, 224, 1) 40%,
+    rgba(0, 13, 50, 1) 100%
+  );
+}
+.ham-btn .bar-top {
+  width: 26px;
+  top: 0;
+  transform: translate(-25px, 16px) rotate(-45deg);
+}
+.ham-btn .bar-middle {
+  width: 110%;
+  transform: rotate(-45deg);
+}
+.ham-btn .bar-bottom {
+  width: 26px;
+  bottom: 0;
+  transform: translate(-2px, -14px) rotate(-45deg);
+}
+.ham-btn .bar::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+.ham-btn .bar-bottom::after {
+  color: #fff;
+  content: "MENU";
+  font-size: 14px;
+  position: absolute;
+  top: 2px;
+  left: -38px;
+  transform: rotate(45deg);
+}
+/* skills-sectionでcolorチェンジ */
+.ham-btn.change-color .bar-bottom::after {
+  color: rgba(76, 113, 224, 1);
+}
+
+/* activeクラスが付与されると線×になり、Menu⇒Closeに変更 */
+.ham-btn.active .bar {
+  background: rgb(255, 255, 255);
+}
+/* Skills-sectionでの変色 */
+.ham-btn.change-color.active .bar {
+  background: rgba(76, 113, 224, 1); /* セクション内でアクティブな場合の色 */
+}
+.ham-btn.active .bar-top {
+  width: 30px;
+  top: 15px;
+  transform: translate(-32%, 3px) rotate(-45deg);
+}
+.ham-btn.active .bar-middle {
+  opacity: 0;
+}
+.ham-btn.active .bar-bottom {
+  width: 30px;
+  top: 15px;
+  transform: translate(-32%, 3px) rotate(45deg);
+}
+.ham-btn.active .bar::before {
+  display: none;
+}
+.ham-btn.active .bar-bottom::after {
+  content: "CLOSE";
+  font-size: 14px;
+  transform: translateY(0) rotate(-45deg);
+  top: 11px;
+  left: 10px;
+}
+
+/* navigation menuの挙動 */
+.navigation {
+  display: none;
+  background: rgba(129, 144, 195, 0.5);
+  position: fixed;
+  top: 100px;
+  right: 0;
+  width: 100px;
+  z-index: 999;
+}
+.navigation__list {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.navigation__list-item {
+  border-bottom: solid 1px #f0edcf;
+}
+.navigation__list-item:first-child {
+  border-top: solid 1px #f0edcf;
+}
+.navigation__link {
+  color: #fff;
+  font-weight: 700;
+  display: block;
+  padding: 24px 0;
+  transition: 0.8s;
+}
+@media (hover: hover) and (pointer: fine) {
+  .navigation__link:hover {
+    background: #333;
+  }
+}
+
+@media (max-width: 767px) {
+  .ham-btn {
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+  }
+  .ham-btn .bar-top {
+    transform: translate(-15px, 10px) rotate(-45deg);
+  }
+  .ham-btn .bar-middle {
+    width: 110%;
+    transform: translate(2px, -1px) rotate(-45deg);
+  }
+  .ham-btn .bar-bottom {
+    transform: translate(2px, -12px) rotate(-45deg);
+  }
+  .navigation {
+    display: none;
+    background: rgba(129, 144, 195, 0.5);
+    position: fixed;
+    top: 82px;
+    right: 0;
+    width: 100px;
+    z-index: 999;
+  }
+}
+
+/* ================================
+架空サイトの注意書き
+===================================*/
+.production__note {
+  font-size: 12px;
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 7px;
+}
+.production__note:last-of-type {
+  margin-bottom: 30px;
+}
+
+/* ================================
+画像ホバーで文字を表示
+===================================*/
+.bgUD {
+  position: relative;
+}
+.bgUD span.mask {
+  position: relative;
+  display: block;
+  line-height: 0;
+  overflow: hidden;
+}
+.bgUD span.mask::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  transform: translateY(-100%);
+  background: rgba(144, 161, 217, 0.7);
+  width: 100%;
+  height: 100%;
+}
+.bgUD:hover span.mask::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+.bgUD span.cap {
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  line-height: 1.5;
+  letter-spacing: 0.2em;
+}
+.bgUD:hover span.cap {
+  opacity: 1;
+}
+a {
+  color: #333;
+}
+
+/* ================================
+footer
+===================================*/
+.footer {
+  position: relative;
+}
+.footer-nav__list {
+  font-family: "Noto Sans Jp";
+  font-size: 14px;
+  font-weight: lighter;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.copyright {
+  font-family: "Noto Sans Jp";
+  font-size: 14px;
+  color: #8190c3;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.return-btn {
+  width: 80px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .footer-nav__list {
+    font-size: 12px;
+    gap: 20px;
+    margin-bottom: 14px;
+  }
+  .copyright {
+    font-size: 10px;
+  }
+  .return-btn {
+    width: 50px;
+    right: 20px;
+    bottom: 10px;
+  }
+}
+/* ================================
+下層ページ共通スタイル
+===================================*/
+.page-heading {
+  font-size: 62px;
+  letter-spacing: 0.5em;
+  text-align: center;
+  padding-top: 160px;
+}
+@media (max-width: 767px) {
+  .page-heading {
+    letter-spacing: 0.15em;
+    padding-top: 95px;
+  }
+}

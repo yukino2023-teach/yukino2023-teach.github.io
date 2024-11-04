@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+.rotation {
+  padding: 50px 0 100px;
+  overflow: hidden;
+}
+.rotation-item {
+  display: flex;
+  width: 100vw;
+  padding: 10px 0;
+}
+.rotation-text {
+  font-family: "Lora";
+  font-size: 96px;
+  display: inline-block;
+  color: #2a3457;
+  letter-spacing: 4px;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  padding: 0 25px;
+}
+.rotation-text:nth-child(odd) {
+  animation: loop 50s -25s linear infinite; /*2.5秒後に5秒かけて一定速度で無限に行う*/
+}
+.rotation-text:nth-child(even) {
+  animation: loop2 50s linear infinite; /*5秒かけて一定速度で無限に行う*/
+}
+@keyframes loop {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes loop2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+/* ================================
+about
+===================================*/
+.about {
+  max-width: 1080px;
+  padding: 0 20px;
+  margin-inline: auto;
+}
+
+/* THOUGHT */
+.about-img__sp {
+  display: none;
+}
+.about-title {
+  font-size: 48px;
+  letter-spacing: 0.15em;
+  color: #edeacd;
+  display: flex; /*文字と横線横並び*/
+  align-items: center; /*横線上下中央*/
+  margin-top: 95px;
+}
+.about-title__right {
+  text-align: right;
+}
+.about-title__right::before {
+  background-color: #edeacd;
+  content: "";
+  flex-grow: 1; /*横幅いっぱい*/
+  height: 1px; /*横線の高さ*/
+  margin-right: 15px; /*文字との隙間*/
+}
+.about-container {
+  max-width: 960px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 70px auto;
+}
+.about-img {
+  width: 325px;
+}
+.about-text {
+  width: 60%;
+}
+
+@media (max-width: 767px) {
+  .about-img__sp {
+    display: block;
+    width: 325px;
+    margin: 40px auto 0;
+  }
+  .about-title {
+    font-size: 32px;
+    margin-top: 40px;
+  }
+  .about-container {
+    flex-direction: column;
+    gap: 50px;
+    margin: 30px auto 100px;
+  }
+  .about-img {
+    display: none;
+  }
+  .about-text {
+    width: 100%;
+  }
+}
+
+/*profile*/
+.about-title__left {
+  text-align: left;
+}
+.about-title__left::after {
+  background-color: #edeacd;
+  content: "";
+  flex-grow: 1; /*横幅いっぱい*/
+  height: 1px; /*横線の高さ*/
+  margin-right: 15px; /*文字との隙間*/
+}
+dl {
+  width: 60%;
+  line-height: 2;
+  display: flex;
+  flex-wrap: wrap;
+}
+dl dt {
+  font-weight: 400;
+  letter-spacing: 1.6em;
+  width: 23%;
+}
+dl dd {
+  width: 77%;
+}
+.profile-indent {
+  text-indent: -1em;
+  padding-left: 1em;
+}
+.profile-indent2 {
+  margin-left: 23%;
+}
+.about-dog__img {
+  width: 325px;
+}
+
+@media (max-width: 767px) {
+  dl {
+    width: 100%;
+  }
+  dl dt {
+    letter-spacing: 1em;
+  }
+}
+
+/*strengths*/
+.strengths-container {
+  max-width: 960px;
+  margin-inline: auto;
+  margin-bottom: 180px;
+}
+.strengths-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 70px 0;
+}
+.strengths-icon {
+  width: 13%;
+  object-fit: contain;
+}
+.strengths-title {
+  font-size: 24px;
+  align-items: center;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+.strengths-title::before {
+  background-color: #fff;
+  content: "";
+  height: 1px;
+  width: 94px;
+  margin-right: 10px;
+}
+.strengths-content {
+  width: 80%;
+}
+
+@media (max-width: 767px) {
+  .strengths-inner {
+    flex-direction: column;
+  }
+  .strengths-icon {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  .strengths-title {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .strengths-title::before {
+    display: none;
+  }
+  .strengths-content {
+    width: 100%;
+  }
+}

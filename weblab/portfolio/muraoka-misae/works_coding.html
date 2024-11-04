@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M.M|Portfolio-works</title>
+    <meta name="description" content="" />
+    <meta
+      name="keywords"
+      content="長野県, 松本市, Webデザイン, ポートフォリオ, ホームページ制作"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/destyle.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/works.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 画面遷移 -->
+    <div class="splash">
+      <div class="splash-logo">NEXT</div>
+      <div class="splashbg"></div>
+    </div>
+    <!-- 星空の背景 -->
+    <div id="particles-js">
+      <div id="wrapper"></div>
+    </div>
+
+    <header class="header">
+      <div class="header__wrapper">
+        <button class="ham-btn" id="js-burger-menu">
+          <span class="bar bar-top"></span>
+          <span class="bar bar-middle"></span>
+          <span class="bar bar-bottom"></span>
+        </button>
+
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="index.html">HOME</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="about.html">ABOUT</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="works_web-design.html">WORKS</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <img
+        class="next-bridge"
+        src="img/next-bridge.svg"
+        alt="月をイメージした装飾"
+      />
+
+      <nav class="category" id="category-nav">
+        <ul class="category__list">
+          <li class="category__list-item">
+            <a class="category__link" href="works_web-design.html"
+              >WEB DESIGN</a
+            >
+          </li>
+          <li class="category__list-item focus">
+            <a class="category__link" href="works_coding.html">CODING</a>
+          </li>
+          <li class="category__list-item">
+            <a class="category__link" href="works_graphic.html">GRAPHIC</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="production">
+        <h2 class="production__heading">CODING</h2>
+        <p class="production__note">
+          各架空サイトはセキュリティ保護のため、ベーシック認証を使用しています。以下のIDとパスワードを入力してください。
+        </p>
+        <p class="production__note">
+          - **ID**: mint-moon <br />- **パスワード**: 0721
+        </p>
+        <p class="production__note">ご協力お願いします。</p>
+        <div class="production__wrapper">
+          <!--石井花壇（架空サイト）-->
+          <article class="production__inner">
+            <div class="bgUD">
+              <a href="###" target="_blank">
+                <span class="mask">
+                  <img
+                    class="production__img"
+                    src="img/works/works-ISHII.jpg"
+                    alt="石井花壇のtop画面"
+                  />
+                  <span class="cap">Please click</span>
+                </span>
+              </a>
+            </div>
+            <h3 class="production__title">石井花壇（架空サイト）</h3>
+            <p class="production__time">制作期間：2週間</p>
+          </article>
+          <!--US ROADERS（架空サイト）-->
+          <article class="production__inner">
+            <div class="bgUD">
+              <a href="###" target="_blank">
+                <span class="mask">
+                  <img
+                    class="production__img"
+                    src="./img/works/works-US-ROADERS.jpg"
+                    alt="US ROADERSのトップ画面"
+                  />
+                  <span class="cap">Please click</span>
+                </span>
+              </a>
+            </div>
+            <h3 class="production__title">US ROADERS（架空サイト）</h3>
+            <p class="production__time">制作期間：1週間</p>
+          </article>
+          <!--HONEY-MIX（架空サイト）-->
+          <article class="production__inner">
+            <div class="bgUD">
+              <a href="###" target="_blank">
+                <span class="mask">
+                  <img
+                    class="production__img"
+                    src="./img/works/works-HONEY-MIX.jpg"
+                    alt="HONEY-MIXのtop画面"
+                  />
+                  <span class="cap">Please click</span>
+                </span>
+              </a>
+            </div>
+            <h3 class="production__title">HONEY-MIX（架空サイト）</h3>
+            <p class="production__time">制作期間：3週間</p>
+          </article>
+          <!--coming soon１-->
+          <article class="production__inner sp-noindex">
+            <img
+              class="production__img--coming-soon"
+              src="./img/works/coming-soon.png"
+              alt="もうすぐ夜明けのイラスト"
+            />
+            <h3 class="production__title production__title--soon">
+              COMING SOON
+            </h3>
+            <p class="production__time"></p>
+          </article>
+          <!--coming soon２-->
+          <article class="production__inner sp-noindex">
+            <img
+              class="production__img--coming-soon"
+              src="./img/works/coming-soon.png"
+              alt="もうすぐ夜明けのイラスト"
+            />
+            <h3 class="production__title production__title--soon">
+              COMING SOON
+            </h3>
+            <p class="production__time"></p>
+          </article>
+          <!--coming soon３-->
+          <article class="production__inner sp-noindex">
+            <img
+              class="production__img--coming-soon"
+              src="./img/works/coming-soon.png"
+              alt="もうすぐ夜明けのイラスト"
+            />
+            <h3 class="production__title production__title--soon">
+              COMING SOON
+            </h3>
+            <p class="production__time"></p>
+          </article>
+        </div>
+      </section>
+      <section class="keep">
+        <h3 class="keep__heading">KEEP IN MIND</h3>
+        <ul class="keep__list">
+          <li class="keep__list-item">
+            HTML・CSSを使用し、デザインを正しく再現します。
+          </li>
+          <li class="keep__list-item">
+            違和感を感じるところはデザイナー様と相談し、よりすばらしいデザインで仕上がるようコミュニケーションをとります。
+          </li>
+          <li class="keep__list-item">
+            コードに規則性をもたせ、誰が見ても分かりやすいコーディングを心掛けます。
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <button>
+        <img
+          class="return-btn"
+          id="js-pageTop"
+          src="img/about/return-btn.png"
+          alt="ページトップへ戻るボタン"
+        />
+      </button>
+      <nav class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__list-item"><a href="index.html">HOME</a></li>
+          <li class="footer-nav__list-item">
+            <a href="about.html">ABOUT</a>
+          </li>
+          <li class="footer-nav__list-item">
+            <a href="works_web-design.html">WORKS</a>
+          </li>
+          <li class="footer-nav__list-item">
+            <a href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="copyright">&copy;MINT-MOON</p>
+    </footer>
+    <!-- 星空のライブラリ -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- jQueryのCDNを自分のjsの直前に記述 -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- 自分のサイト用のJS -->
+    <script src="./js/main.js"></script>
+    <script src="./js/subpage.js"></script>
+  </body>
+</html>

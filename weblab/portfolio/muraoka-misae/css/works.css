@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+.page-subheading {
+  font-family: "Lora";
+  font-size: 42px;
+  text-align: center;
+  padding: 0 20px;
+  margin: 150px 0 100px;
+}
+.category {
+  padding: 0 20px;
+  margin-top: 50px;
+}
+/* category固定用のクラス */
+.fixed {
+  width: 100%;
+  top: 30px;
+  position: fixed;
+  z-index: 100;
+  margin-top: 15px;
+}
+.category__list {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.category__list-item {
+  font-family: "Noto Sans Jp";
+  font-size: 20px;
+  width: 235px;
+  height: 45px;
+  background-color: #8190c3;
+  border-radius: 5px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category__link {
+  display: inline-block;
+  padding: 0 10px;
+}
+.focus {
+  color: #102364;
+  background-color: #fff;
+}
+.production {
+  margin: 120px 0 300px;
+}
+.production__heading {
+  font-size: 40px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 130px;
+}
+
+/* production__heading光りながら出現 */
+.production__heading span {
+  opacity: 0;
+}
+.production__heading.glow span {
+  animation: glow_anime_on 1s ease-out forwards;
+}
+@keyframes glow_anime_on {
+  0% {
+    opacity: 0;
+    text-shadow: 0 0 0 #fff, 0 0 0 #fff;
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 10px #fff, 0 0 15px #fff;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 0 #fff, 0 0 0 #fff;
+  }
+}
+
+.production__wrapper {
+  max-width: 1080px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+  padding: 0 20px;
+  margin-inline: auto;
+}
+.production__inner {
+  width: 300px;
+  position: relative;
+}
+.production__img {
+  width: 300px;
+  height: 190px;
+  object-fit: cover;
+  margin-bottom: 22px;
+}
+.production__img--coming-soon {
+  width: 300px;
+  height: 190px;
+  object-fit: cover;
+  object-position: bottom;
+  margin-bottom: 22px;
+}
+.production__title {
+  font-family: "Noto Sans Jp";
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.production__title--coming-soon {
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  position: absolute;
+  top: 107px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.production__title--soon {
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.production__time {
+  margin-bottom: 20px;
+}
+.keep {
+  max-width: 1080px;
+  padding: 0 20px;
+  margin-inline: auto;
+  margin-bottom: 300px;
+}
+.keep__heading {
+  font-family: "Noto Sans Jp";
+  font-size: 24px;
+  display: inline-block;
+  text-align: center;
+  background-color: #8190c3;
+  padding: 5px 30px;
+}
+.keep__list {
+  line-height: 1.5;
+  color: #102364;
+  background-color: #f0edcf;
+  padding: 40px 130px;
+}
+
+@media (max-width: 767px) {
+  .page-subheading {
+    font-size: 36px;
+    line-height: 1.4;
+    margin: 100px 0;
+  }
+  .fixed {
+    margin-top: 60px;
+  }
+  .category__list {
+    gap: 20px;
+  }
+  .category__list-item {
+    font-size: 12px;
+    height: 40px;
+    letter-spacing: 0.1em;
+    line-height: 40px;
+  }
+  .category__list-item:first-child {
+    line-height: 15px;
+    vertical-align: middle;
+    padding: 4px 0;
+  }
+
+  .sp-noindex {
+    display: none;
+  }
+  .production__heading {
+    font-size: 30px;
+    margin-bottom: 80px;
+  }
+  .production__title {
+    font-size: 18px;
+  }
+  .keep {
+    margin-bottom: 150px;
+  }
+  .keep__heading {
+    font-size: 18px;
+  }
+  .keep__list {
+    line-height: 1.5;
+    padding: 40px 10px;
+  }
+  .keep__list-item {
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M.M|Portfolio-contact</title>
+    <meta
+      name="description"
+      content="ちょっと聞いてみようかな…くらいお気軽にお問い合わせください。しつこい勧誘等一切おこないません。"
+    />
+    <meta
+      name="keywords"
+      content="長野県, 松本市, Webデザイン, ポートフォリオ, ホームページ制作"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/destyle.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/contact-style.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 画面遷移 -->
+    <div class="splash">
+      <div class="splash-logo">NEXT</div>
+      <div class="splashbg"></div>
+    </div>
+    <!-- 星空の背景 -->
+    <div id="particles-js">
+      <div id="wrapper"></div>
+    </div>
+
+    <header class="header">
+      <div class="header__wrapper">
+        <button class="ham-btn" id="js-burger-menu">
+          <span class="bar bar-top"></span>
+          <span class="bar bar-middle"></span>
+          <span class="bar bar-bottom"></span>
+        </button>
+
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="index.html">HOME</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="about.html">ABOUT</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="works_web-design.html">WORKS</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="page-top">
+        <h1 class="page-heading">Contact</h1>
+      </div>
+
+      <div class="contact-wrapper">
+        <form action=" #" method="post" class="form">
+          <div class="contact__inner">
+            <div class="contact__content">
+              <p class="contact__area">
+                <label for="name"
+                  ><span>NAME</span
+                  ><input
+                    class="contact-input__custom"
+                    type="text"
+                    id="name"
+                    name="name"
+                    required=""
+                /></label>
+              </p>
+              <p class="contact__area">
+                <label for="email"
+                  ><span>MAIL ADDRESS</span
+                  ><input
+                    class="contact-input__custom"
+                    type="email"
+                    id="email"
+                    name="email"
+                /></label>
+              </p>
+            </div>
+            <p class="comment__container">
+              <label for="comment"
+                ><span class="comment__title">MESSAGE</span
+                ><textarea
+                  class="contact-textarea__custom"
+                  name="comment"
+                  id="comment"
+                  cols="30"
+                  rows="10"
+                  required=""
+                ></textarea>
+              </label>
+            </p>
+          </div>
+          <p class="submit-btn">
+            <input class="submit-btn__text" type="submit" value="SEND" />
+          </p>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <button>
+        <img
+          class="return-btn"
+          id="js-pageTop"
+          src="img/about/return-btn.png"
+          alt="ページトップへ戻るボタン"
+        />
+      </button>
+      <nav class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__list-item"><a href="index.html">HOME</a></li>
+          <li class="footer-nav__list-item">
+            <a href="about.html">ABOUT</a>
+          </li>
+          <li class="footer-nav__list-item">
+            <a href="works_web-design.html">WORKS</a>
+          </li>
+          <li class="footer-nav__list-item">
+            <a href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="copyright">&copy;MINT-MOON</p>
+    </footer>
+    <!-- 星空のライブラリ -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- jQueryのCDNを自分のjsの直前に記述 -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- 自分のサイト用のJS -->
+    <script src="./js/main.js"></script>
+    <script src="./js/subpage.js"></script>
+  </body>
+</html>

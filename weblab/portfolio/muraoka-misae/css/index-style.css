@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+/* ================================
+top-comment
+===================================*/
+.first-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.first-message__text {
+  color: #fff;
+  font-size: clamp(2.5rem, 0.875rem + 3.33vw, 3.375rem);
+  letter-spacing: 0.1em;
+  line-height: 2;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.char {
+  opacity: 0;
+  display: inline-block;
+  animation: fadeIn 0.5s forwards;
+  word-break: keep-all; /*単語の途中で改行しない*/
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.introduction {
+  font-family: "Noto Sans JP";
+  font-size: 24px;
+  text-align: center;
+  padding: 0 20px;
+  margin: 96px auto 0;
+}
+.introduction__text {
+  letter-spacing: 0.2em;
+  line-height: 1.7;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  margin-bottom: 40px;
+}
+.introduction__text.visible {
+  opacity: 1;
+  transform: rotateY(0);
+}
+
+@media (max-width: 767px) {
+  .first-message__text {
+    padding: 38px 0;
+  }
+  .introduction {
+    font-size: 18px;
+    margin: 62px auto 0;
+  }
+}
+/* ================================
+About
+===================================*/
+.about {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 56px 20px 0 20px;
+  margin-bottom: 170px;
+  margin-top: 100px;
+}
+.about-text__inner1,
+.about-text__inner2 {
+  font-size: 18px;
+  line-height: 2;
+}
+.about-text__strong {
+  font-family: serif;
+  font-size: 28px;
+  margin: 20px auto 20px 26px;
+}
+.more-link {
+  text-align: center;
+}
+.more-btn {
+  width: 132px;
+  margin-top: 70px;
+}
+@media (max-width: 767px) {
+  .about {
+    margin: 0 auto;
+    padding: 56px 20px 0 20px;
+    margin-bottom: 170px;
+    margin-top: 62px;
+  }
+  .about-text__strong {
+    font-size: 24px;
+    margin: 20px auto 20px 16px;
+  }
+  .more-btn {
+    width: 120px;
+    margin: 56px auto 0;
+  }
+}
+/* ================================
+skills
+===================================*/
+.skills {
+  font-family: "Noto Sans Jp";
+  color: #102364;
+  overflow: hidden;
+}
+.skills-bg {
+  background: #e7e6dd;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  margin-left: -200px;
+  margin-right: -200px;
+  padding: 70px 200px;
+}
+.section-title-blue {
+  font-family: "Lora";
+  color: #102364;
+}
+.skills-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1080px;
+  margin: 100px auto 0;
+}
+.skills-content__wrapper {
+  max-width: 500px;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+.skills-content__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 38px;
+}
+.skills-content__title {
+  font-family: "Lora";
+  font-size: 32px;
+}
+.skills-content__icon {
+  width: 140px;
+}
+.skills-content__text {
+  line-height: 1.6;
+}
+.skills-content__ability {
+  margin-top: 40px;
+}
+.skills-content__ability-title {
+  font-size: 18px;
+  margin: 0 0 20px 60px;
+}
+dl {
+  width: 300px;
+  line-height: 1.6;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 60px;
+}
+dl dt {
+  font-weight: 400;
+  width: 40%;
+}
+@media (max-width: 767px) {
+  .skills-bg {
+    margin-left: -300px;
+    margin-right: -300px;
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+
+  .skills-content {
+    display: block;
+    margin: 0 auto;
+  }
+  .skills-content__title {
+    font-size: 28px;
+  }
+  .skills-content__icon {
+    width: 98px;
+  }
+  .skills-content__wrapper {
+    margin-top: 84px;
+    margin-inline: auto;
+  }
+
+  .skills-content__inner {
+    margin-bottom: 26px;
+  }
+  .skills-content__ability {
+    margin-top: 26px;
+  }
+  .skills-content__ability-title {
+    font-size: 18px;
+    margin: 0 0 12px 60px;
+  }
+}
+/* ================================
+works
+===================================*/
+.works {
+  max-width: 1080px;
+  padding: 70px 20px 200px;
+  margin: 0 auto;
+}
+.works-wrapper {
+  font-family: "Noto Sans Jp";
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 80px 70px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.works-content {
+  max-width: 300px;
+}
+.works-item {
+  width: 300px;
+  height: 190px;
+  object-fit: cover;
+  clip-path: polygon(7% 1%, 100% 0, 100% 86%, 93% 100%, 0 100%, 0 14%);
+  margin-bottom: 22px;
+}
+.works-category {
+  display: inline;
+  background-color: #8190c3;
+  padding: 2px 10px;
+}
+.works-name {
+  margin: 15px 0;
+}
